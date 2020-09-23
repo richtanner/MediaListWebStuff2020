@@ -26,8 +26,13 @@ public class DumbMovieContent {
     // TODO: Create five NEW movie objects here. Complete with images and URLs. DELETE the two existing movies, they are only here as an example
 
     private static final String movie1Title = "The Rat Movie";
-    private static final String movie1Description = "In the middle of the night, The Rats and their leader " +
-            "The Giant Rat sing their legendary chant:";
+    private static final String movie1Description = "In the middle of the night, The Rats and their leader The Giant Rat sing their legendary chant:\n" +
+            "\n" +
+            "Rats: Rats, we're rats, we're the rats. We prey at night, we stalk at night, we're the rats.\n" +
+            "\n" +
+            "Giant Rat: I'm da giant rat that makes all of da rules!\n" +
+            "\n" +
+            "Giant Rat and Rats: Let's see what kind of trouble we can get ourselves into\uFEFF!";
     private static final String movie1Year = "2014";
     private static final String movie1Image = "thriller";
     private static final String movie1Weblink = "https://jerma-lore.fandom.com/wiki/Rat_Movie";
