@@ -49,6 +49,15 @@ public class DumbMovieContent {
     private static final String movie2Image = "Dead Poets";
     private static final String movie2Weblink = "https://www.rottentomatoes.com/m/dead_poets_society";
 
+//Zathura
+    private static final String movie3Title = "Zathura: A Space Adventure";
+    private static final String movie3Description = "After their father (Tim Robbins) is called into work, two young boys, Walter (Josh Hutcherson)" +
+            " and Danny (Jonah Bobo), are left in the care of their teenage sister, Lisa (Kristen Stewart), and told they must stay inside. Walter" +
+            " and Danny, who anticipate a boring day, are shocked when they begin playing Zathura, a space-themed board game, which they realize" +
+            " has mystical powers when their house is shot into space. With the help of an astronaut (Dax Shepard), the boys attempt to return home.";
+    private static final String movie3Year = "2005";
+    private static final String movie3Image = "Zathura";
+    private static final String movie3Weblink = "https://www.rottentomatoes.com/m/zathura";
 
 
 
@@ -61,12 +70,15 @@ public class DumbMovieContent {
         // make those movie objects
         MovieModel ratMovie = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
         MovieModel deadPoets = new MovieModel(movie2Title, movie2Description, movie2Year, movie2Image, movie2Weblink);
+        MovieModel zathura = new MovieModel(movie3Title, movie3Description, movie3Year, movie3Image, movie3Weblink);
 
         // add EACH movie object to our lists and maps
-
+if(!(ITEM_MAP.containsKey("Rat Movie")))
+    {
         addMovieToList(ratMovie);
         addMovieToList(deadPoets);
-
+        addMovieToList(zathura);
+    }
         // no more movies to add?  Okay... return our list
         return MOVIES;
     }
