@@ -67,6 +67,8 @@ public class MovieDetailFragment extends Fragment {
                     case "Rat Movie":
                         thisMovieImageView.setImageResource(R.drawable.ratmovie);
                         break;
+                    case "Dead Poets":
+                        thisMovieImageView.setImageResource(R.drawable.deadpoet);
                     default:
                         break;
                 }

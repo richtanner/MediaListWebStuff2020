@@ -26,7 +26,7 @@ public class DumbMovieContent {
 
     // CS315: DO THIS
     // TODO: Create five NEW movie objects here. Complete with images and URLs. DELETE the two existing movies, they are only here as an example
-
+//Rat Movie
     private static final String movie1Title = "Rat Movie";
     private static final String movie1Description = "In the middle of the night, The Rats and their leader The Giant Rat sing their legendary chant:\n" +
             "\n" +
@@ -39,6 +39,17 @@ public class DumbMovieContent {
     private static final String movie1Image = "Rat Movie";
     private static final String movie1Weblink = "https://jerma-lore.fandom.com/wiki/Rat_Movie";
 
+//Dead Poets Society
+    private static final String movie2Title = "Dead Poets Society";
+    private static final String movie2Description = "A new English teacher, John Keating (Robin Williams), is introduced to an all-boys " +
+            "preparatory school that is known for its ancient traditions and high standards. He uses unorthodox methods to reach out to his " +
+            "students, who face enormous pressures from their parents and the school. With Keating's help, students Neil Perry (Robert Sean Leonard), " +
+            "Todd Anderson (Ethan Hawke) and others learn to break out of their shells, pursue their dreams and seize the day.";
+    private static final String movie2Year = "1989";
+    private static final String movie2Image = "Dead Poets";
+    private static final String movie2Weblink = "https://www.rottentomatoes.com/m/dead_poets_society";
+
+
 
 
 
@@ -48,11 +59,13 @@ public class DumbMovieContent {
     public List<MovieModel> createMovieMagic () {
 
         // make those movie objects
-        MovieModel romcom = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
+        MovieModel ratMovie = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
+        MovieModel deadPoets = new MovieModel(movie2Title, movie2Description, movie2Year, movie2Image, movie2Weblink);
 
         // add EACH movie object to our lists and maps
 
-        addMovieToList(romcom);
+        addMovieToList(ratMovie);
+        addMovieToList(deadPoets);
 
         // no more movies to add?  Okay... return our list
         return MOVIES;

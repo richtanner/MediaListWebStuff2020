@@ -6,16 +6,24 @@
 
 <!--Rat Movie -->
     <string name="ratTitle">The Rat Movie</string>
-    <string name="ratDessscription">"In the middle of the night, The Rats and their leader The Giant Rat sing their legendary chant:
-
+    <string name="ratDescription">"In the middle of the night, The Rats and their leader The Giant Rat sing their legendary chant:
     Rats: Rats, we're rats, we're the rats. We prey at night, we stalk at night, we're the rats.
-
     Giant Rat: I'm da giant rat that makes all of da rules!
-
     Giant Rat and Rats: Let's see what kind of trouble we can get ourselves into﻿!"</string>
     <string name="ratYear">2014</string>
     <string name="ratImage">Thriller/Mystery</string>
     <string name="ratLink">https://jerma-lore.fandom.com/wiki/Rat_Movie</string>
+
+
+<!--Dead Poets Society -->
+    <string name="poetTitle">Dead Poets Society</string>
+    <string name="poetDescription">A new English teacher, John Keating (Robin Williams), is introduced to an all-boys preparatory school that
+        is known for its ancient traditions and high standards. He uses unorthodox methods to reach out to his students, who face enormous
+        pressures from their parents and the school. With Keating's help, students Neil Perry (Robert Sean Leonard), Todd Anderson (Ethan Hawke)
+        and others learn to break out of their shells, pursue their dreams and seize the day.</string>
+    <string name="poetYear">1989</string>
+    <string name="poetImage">Dead Poet</string>
+    <string name="poetLink">https://www.rottentomatoes.com/m/dead_poets_society</string>
 
 
     
