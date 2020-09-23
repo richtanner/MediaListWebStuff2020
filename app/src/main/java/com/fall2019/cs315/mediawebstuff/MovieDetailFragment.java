@@ -62,6 +62,14 @@ public class MovieDetailFragment extends Fragment {
                 // CS315: DO THIS
                 // TODO: Set the image based upon the string we got stashed in getMovieImage()
 
+                switch(mItem.getMovieImage())
+                {
+                    case "Rat Movie":
+                        thisMovieImageView.setImageResource(R.drawable.ratmovie);
+                        break;
+                    default:
+                        break;
+                }
             }
 
             FloatingActionButton fab = (FloatingActionButton) activity.findViewById(R.id.fab);
