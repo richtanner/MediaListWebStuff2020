@@ -73,6 +73,12 @@ public class MovieDetailFragment extends Fragment {
                     case "Zathura":
                         thisMovieImageView.setImageResource(R.drawable.zathura);
                         break;
+                    case "Gadget":
+                        thisMovieImageView.setImageResource(R.drawable.gadget);
+                        break;
+                    case "La La":
+                        thisMovieImageView.setImageResource(R.drawable.la);
+                        break;
                     default:
                         break;
                 }

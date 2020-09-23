@@ -59,7 +59,24 @@ public class DumbMovieContent {
     private static final String movie3Image = "Zathura";
     private static final String movie3Weblink = "https://www.rottentomatoes.com/m/zathura";
 
+//Inspector Gadget
+    private static final String movie4Title = "Inspector Gadget";
+    private static final String movie4Description = "John Brown (Matthew Broderick) is a bumbling but well-intentioned security guard who is badly injured " +
+            "in an explosion planned by an evil mastermind. He is taken to a laboratory, where Brenda (Joely Fisher), a leading robotics surgeon, replaces " +
+            "his damaged limbs with state-of-the-art gadgets and tools. Named Inspector Gadget by the press, John -- along with his niece, Penny " +
+            "(Michelle Trachtenberg), and her trusty dog, Brain -- uses his new powers to discover who was behind the explosion.";
+    private static final String movie4Year = "1999";
+    private static final String movie4Image = "Gadget";
+    private static final String movie4Weblink = "https://www.rottentomatoes.com/m/inspector_gadget";
 
+//Inspector Gadget
+    private static final String movie5Title = "La La Land";
+    private static final String movie5Description = "Sebastian (Ryan Gosling) and Mia (Emma Stone) are drawn together by their common desire " +
+            "to do what they love. But as success mounts they are faced with decisions that begin to fray the fragile fabric of their love " +
+            "affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.";
+    private static final String movie5Year = "2016";
+    private static final String movie5Image = "La La";
+    private static final String movie5Weblink = "https://www.rottentomatoes.com/m/la_la_land";
 
 
     /**
@@ -68,17 +85,23 @@ public class DumbMovieContent {
     public List<MovieModel> createMovieMagic () {
 
         // make those movie objects
-        MovieModel ratMovie = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
-        MovieModel deadPoets = new MovieModel(movie2Title, movie2Description, movie2Year, movie2Image, movie2Weblink);
-        MovieModel zathura = new MovieModel(movie3Title, movie3Description, movie3Year, movie3Image, movie3Weblink);
+
 
         // add EACH movie object to our lists and maps
-if(!(ITEM_MAP.containsKey("Rat Movie")))
-    {
-        addMovieToList(ratMovie);
-        addMovieToList(deadPoets);
-        addMovieToList(zathura);
-    }
+        if(!(ITEM_MAP.containsKey("Rat Movie")))
+            {
+                MovieModel ratMovie = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
+                MovieModel deadPoets = new MovieModel(movie2Title, movie2Description, movie2Year, movie2Image, movie2Weblink);
+                MovieModel zathura = new MovieModel(movie3Title, movie3Description, movie3Year, movie3Image, movie3Weblink);
+                MovieModel gadget = new MovieModel(movie4Title, movie4Description, movie4Year, movie4Image, movie4Weblink);
+                MovieModel la = new MovieModel(movie5Title, movie5Description, movie5Year, movie5Image, movie5Weblink);
+
+                addMovieToList(ratMovie);
+                addMovieToList(deadPoets);
+                addMovieToList(zathura);
+                addMovieToList(gadget);
+                addMovieToList(la);
+            }
         // no more movies to add?  Okay... return our list
         return MOVIES;
     }
