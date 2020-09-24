@@ -12,6 +12,7 @@ public class SplashActivity extends AppCompatActivity {
 
         // as soon as THIS Activity loads, we know the APP has loaded, so
         // call for our Main Activity (MovieListActivity, in this case) to load up
+        //hola
         Intent intent = new Intent(this, MovieListActivity.class);
         startActivity(intent);
         finish();
