@@ -80,14 +80,9 @@ public class MovieDetailFragment extends Fragment {
                     // TODO: also, make sure you have a ProgressBar on your WebView, so users know you are loading something!
                     //DONE
 
-
-                    //Set up where to go with the web or link provided
-//                    Intent intent = new Intent(getActivity(), WebActivity.class);
-//                    intent.putExtra(mItem.getMovieWeblink(), WebActivity.url);
-//                    startActivity(intent);
-//
 //                    Snackbar.make(view, "Make this button launch a NEW Activity with a WebView in it!", Snackbar.LENGTH_LONG).setAction("Action", null).show();
 
+                    //Set up where to go with the web or link provided
                     Context context = view.getContext();
                     Intent intent = new Intent(context, WebActivity.class);
                     intent.putExtra("WEB_URL", mItem.getMovieWeblink());

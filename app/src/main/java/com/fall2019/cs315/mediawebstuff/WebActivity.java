@@ -24,7 +24,6 @@ public class WebActivity extends AppCompatActivity {
         webview.setWebViewClient(new WebViewClient());
 
         pro = findViewById(R.id.progressBar);
-        //webview.loadUrl(webURL);
 
         webview.setWebViewClient(new WebViewClient(){
             public void onPageStarted(WebView view, String url, Bitmap favicon){

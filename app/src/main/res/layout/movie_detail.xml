@@ -6,4 +6,5 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:textIsSelectable="true"
+    android:textSize="30sp"
     tools:context=".MovieDetailFragment" />

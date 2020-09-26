@@ -30,31 +30,31 @@ public class DumbMovieContent {
     private static final String show1Title = "Money Heist";
     private static final String show1Description = "A group of robbers are going to rob 2.400 billion of euros at the Museum of Money in Spain. The Professor is in charge and he will recruit the people that is going to be in the heist."; //Context.getString(R.string.show1Des);
     private static final String show1Year = "2017";
-    private static final String show1Image = "genericromcom";
+    private static final String show1Image = "moneyheist";
     private static final String show1Weblink = "https://www.imdb.com/title/tt6468322/";
 
     private static final String show2Title = "Friends";
     private static final String show2Description = "A group of friends go through life together, they try to help each other. Cry, laugh, drama, and adventure all together.";
     private static final String show2Year = "1994-2004";
-    private static final String show2Image = "genericaction";
+    private static final String show2Image = "friends";
     private static final String show2Weblink = "https://www.imdb.com/title/tt0108778/";
 
-    private static final String show3Title = "Parks and Recreation";
+    private static final String show3Title = "Parks and Rec.";
     private static final String show3Description = "The public officials of the Indiana town pursue to make their city a better place.";
     private static final String show3Year = "2009-2020";
-    private static final String show3Image = "genericaction";
+    private static final String show3Image = "parksandrec";
     private static final String show3Weblink = "https://www.imdb.com/title/tt1266020/";
 
     private static final String show4Title = "Young & Hungry";
     private static final String show4Description = "A young chef was hired by a well known young entrepreneur to be her personal chef, many adventures happen along the way.";
     private static final String show4Year = "2014-2018";
-    private static final String show4Image = "genericaction";
+    private static final String show4Image = "youngandhungry";
     private static final String show4Weblink = "https://www.imdb.com/title/tt2084712/";
 
     private static final String show5Title = "Velvet";
     private static final String show5Description = "Fashion house in Spain in the late 50s, a lot of romance, drama, jealousies, and many plot twists.";
     private static final String show5Year = "2013-2016";
-    private static final String show5Image = "genericaction";
+    private static final String show5Image = "velvet";
     private static final String show5Weblink = "https://www.imdb.com/title/tt2955402/";
 
 
