@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fall2019.cs315.mediawebstuff">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,12 +22,25 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.fall2019.cs315.mediawebstuff.MovieListActivity"
+        <activity
+            android:name=".WebActivity"
+            android:label="@string/show">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fall2019.cs315.mediawebstuff.MovieDetailActivity" />
+        </activity>
+
+        <activity
+            android:name="com.fall2019.cs315.mediawebstuff.MovieListActivity"
+            android:configChanges="orientation|keyboardHidden"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+
         <activity
             android:name="com.fall2019.cs315.mediawebstuff.MovieDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_movie_detail"
+            android:launchMode="singleTask"
             android:parentActivityName="com.fall2019.cs315.mediawebstuff.MovieListActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

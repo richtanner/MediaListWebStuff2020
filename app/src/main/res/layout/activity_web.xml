@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fall2019.cs315.mediawebstuff.WebActivity">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+    </WebView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/AppTheme"
+        android:layout_width="138dp"
+        android:layout_height="131dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="500dp"
+        android:layout_marginTop="800dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_x="134dp"
+        android:layout_y="290dp"
+        app:layout_constraintBottom_toTopOf="@+id/webview"
+        app:layout_constraintEnd_toStartOf="@+id/webview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49" />
+
+
+</android.support.constraint.ConstraintLayout>

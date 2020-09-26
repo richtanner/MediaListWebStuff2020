@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">My Media List</string>
     <string name="title_movie_detail">Media Detail</string>
+    <string name="show">Show</string>
 
 
 <!--    CS315: DO THIS-->
@@ -18,6 +19,5 @@
     <string name="example_2_year">2019</string>
     <string name="example_2_image">genericaction</string>
     <string name="example_2_url">http://www.denofgeek.com/us/movies/18824/the-5-most-common-action-movie-plots</string>
-
     
 </resources>

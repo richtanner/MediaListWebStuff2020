@@ -23,19 +23,39 @@ public class DumbMovieContent {
      */
 
     // CS315: DO THIS
-    // TODO: Create five NEW movie objects here. Complete with images and URLs. DELETE the two existing movies, they are only here as an example
 
-    private static final String movie1Title = "Rom Com Movie:";
-    private static final String movie1Description = "Naturally, focuses on 2 people who really shouldn’t be together. It somehow becomes mutually advantageous for them to be together, or perhaps, they are interested in each other but their romance is based on false pretenses. Because the leads generally have no charisma, they each need a zany best friend who inserts dirty jokes wherever necessary. The two leads will fall in love in an extended music montage set to the music of Sixpence None the Richer. Once they find out about the false pretenses, they will take some time apart but realize how much they care for the other. Then comes “The Chase,” which can either be in an airport (not legal anymore), in traffic or somehow on boats. \n \nYou've seen this before, but not with these two actors!";
-    private static final String movie1Year = "2015";
-    private static final String movie1Image = "genericromcom";
-    private static final String movie1Weblink = "http://showtimeshowdown.com/5-cliche-formulas-of-movie-genres/";
+    // TODO: Create five NEW movie objects here. Complete with images and URLs. DELETE the two existing movies, they are only here as an example.
+    // DONE
 
-    private static final String actionTitle = "Every Action Movie Ever";
-    private static final String actionDescription = "The villain has left the hero for dead, or killed the hero’s brother, sister, parents, wife or family pets. Filled with righteous fury, the hero tools up and embarks on a bloody rampage.  \n \nIf the movie does well, we will do it again in the sequel! \n \nMaybe the villain tries to get revenge on the hero for getting revenge on the villain in this movie...";
-    private static final String actionYear = "2017";
-    private static final String actionImage = "genericaction";
-    private static final String actionWeblink = "http://www.denofgeek.com/us/movies/18824/the-5-most-common-action-movie-plots";
+    private static final String show1Title = "Money Heist";
+    private static final String show1Description = "A group of robbers are going to rob 2.400 billion of euros at the Museum of Money in Spain. The Professor is in charge and he will recruit the people that is going to be in the heist."; //Context.getString(R.string.show1Des);
+    private static final String show1Year = "2017";
+    private static final String show1Image = "genericromcom";
+    private static final String show1Weblink = "https://www.imdb.com/title/tt6468322/";
+
+    private static final String show2Title = "Friends";
+    private static final String show2Description = "A group of friends go through life together, they try to help each other. Cry, laugh, drama, and adventure all together.";
+    private static final String show2Year = "1994-2004";
+    private static final String show2Image = "genericaction";
+    private static final String show2Weblink = "https://www.imdb.com/title/tt0108778/";
+
+    private static final String show3Title = "Parks and Recreation";
+    private static final String show3Description = "The public officials of the Indiana town pursue to make their city a better place.";
+    private static final String show3Year = "2009-2020";
+    private static final String show3Image = "genericaction";
+    private static final String show3Weblink = "https://www.imdb.com/title/tt1266020/";
+
+    private static final String show4Title = "Young & Hungry";
+    private static final String show4Description = "A young chef was hired by a well known young entrepreneur to be her personal chef, many adventures happen along the way.";
+    private static final String show4Year = "2014-2018";
+    private static final String show4Image = "genericaction";
+    private static final String show4Weblink = "https://www.imdb.com/title/tt2084712/";
+
+    private static final String show5Title = "Velvet";
+    private static final String show5Description = "Fashion house in Spain in the late 50s, a lot of romance, drama, jealousies, and many plot twists.";
+    private static final String show5Year = "2013-2016";
+    private static final String show5Image = "genericaction";
+    private static final String show5Weblink = "https://www.imdb.com/title/tt2955402/";
 
 
     /**
@@ -43,13 +63,22 @@ public class DumbMovieContent {
      */
     public List<MovieModel> createMovieMagic () {
 
-        // make those movie objects
-        MovieModel action = new MovieModel(actionTitle, actionDescription, actionYear, actionImage, actionWeblink);
-        MovieModel romcom = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
+        if(MOVIES.size() == 0) //So the list does not repeat each time
+        {
+            // make those movie objects
+            MovieModel showMoneyHeist = new MovieModel(show1Title, show1Description, show1Year, show1Image, show1Weblink);
+            MovieModel showFriends = new MovieModel(show2Title, show2Description, show2Year, show2Image, show2Weblink);
+            MovieModel showParksRec = new MovieModel(show3Title, show3Description, show3Year, show3Image, show3Weblink);
+            MovieModel showYoungHungry = new MovieModel(show4Title, show4Description, show4Year, show4Image, show4Weblink);
+            MovieModel showVelvet = new MovieModel(show5Title, show5Description, show5Year, show5Image, show5Weblink);
 
-        // add EACH movie object to our lists and maps
-        addMovieToList(action);
-        addMovieToList(romcom);
+            // add EACH movie object to our lists and maps
+            addMovieToList(showMoneyHeist);
+            addMovieToList(showFriends);
+            addMovieToList(showParksRec);
+            addMovieToList(showYoungHungry);
+            addMovieToList(showVelvet);
+        }
 
         // no more movies to add?  Okay... return our list
         return MOVIES;
