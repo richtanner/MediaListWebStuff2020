@@ -1,6 +1,8 @@
 package com.fall2019.cs315.mediawebstuff;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -30,6 +32,7 @@ public class MovieDetailFragment extends Fragment {
      */
     private MovieModel mItem;
 
+
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
@@ -56,11 +59,16 @@ public class MovieDetailFragment extends Fragment {
             if (appBarLayout != null) {
                 appBarLayout.setTitle(mItem.getMovieTitle());
             }
-            ImageView thisMovieImageView = activity.findViewById(R.id.movieImageView);
+            final ImageView thisMovieImageView = activity.findViewById(R.id.movieImageView);
             if (thisMovieImageView != null) {
 
                 // CS315: DO THIS
                 // TODO: Set the image based upon the string we got stashed in getMovieImage()
+                String StringGenerated = mItem.getMovieImage();
+                Context context = thisMovieImageView.getContext();
+                int id = context.getResources().getIdentifier(StringGenerated, "drawable", context.getPackageName());
+                thisMovieImageView.setImageResource(id);
+
 
             }
 
@@ -73,9 +81,10 @@ public class MovieDetailFragment extends Fragment {
                     // TODO: launch the webpage with the URL we gots back from the model... also lose the snackbar stuff
                     // TODO: hint - you need to establish a new intent and launch a new Activity
                     // TODO: also, make sure you have a ProgressBar on your WebView, so users know you are loading something!
-
-                    Snackbar.make(view, "Make this button launch a NEW Activity with a WebView in it!", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
+                    Context context = view.getContext();
+                    Intent intent = new Intent(context, WebActivity.class);
+                    intent.putExtra("weblinkthing", mItem.getMovieWeblink());
+                    context.startActivity(intent);
                 }
             });
         }
