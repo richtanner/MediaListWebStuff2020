@@ -19,11 +19,6 @@ public class DumbMovieContent {
      */
     public static final List<MovieModel> MOVIES = new ArrayList<MovieModel>();
 
-
-    /**
-     * Create all those movie Strings we will be needing for teh models
-     */
-
     // CS315: DO THIS
     // TODO: Create five NEW movie objects here. Complete with images and URLs. DELETE the two existing movies, they are only here as an example
 //Rat Movie
@@ -69,7 +64,7 @@ public class DumbMovieContent {
     private static final String movie4Image = "Gadget";
     private static final String movie4Weblink = "https://www.rottentomatoes.com/m/inspector_gadget";
 
-//Inspector Gadget
+//La La Land
     private static final String movie5Title = "La La Land";
     private static final String movie5Description = "Sebastian (Ryan Gosling) and Mia (Emma Stone) are drawn together by their common desire " +
             "to do what they love. But as success mounts they are faced with decisions that begin to fray the fragile fabric of their love " +

@@ -1,6 +1,8 @@
 package com.fall2019.cs315.mediawebstuff;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -9,6 +11,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,7 +21,8 @@ import android.widget.TextView;
  * in two-pane mode (on tablets) or a {@link MovieDetailActivity}
  * on handsets.
  */
-public class MovieDetailFragment extends Fragment {
+public class MovieDetailFragment extends Fragment
+{
     /**
      * The fragment argument representing the item ID that this fragment
      * represents.
@@ -34,17 +38,20 @@ public class MovieDetailFragment extends Fragment {
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
-    public MovieDetailFragment() {
+    public MovieDetailFragment()
+    {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
 
         // CS315: DO THIS
         // TODO: BUG FIX - Figure out why the App CRASHES when we rotate this Activity...
 
-        if (getArguments().containsKey(ARG_ITEM_ID)) {
+        if (getArguments().containsKey(ARG_ITEM_ID))
+        {
             // Load the Movie content specified by the fragment
             // arguments. In a real-world scenario, use a Loader
             // to load content from a content provider.
@@ -53,14 +60,12 @@ public class MovieDetailFragment extends Fragment {
 
             Activity activity = this.getActivity();
             CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
-            if (appBarLayout != null) {
+            if (appBarLayout != null)
                 appBarLayout.setTitle(mItem.getMovieTitle());
-            }
-            ImageView thisMovieImageView = activity.findViewById(R.id.movieImageView);
-            if (thisMovieImageView != null) {
 
-                // CS315: DO THIS
-                // TODO: Set the image based upon the string we got stashed in getMovieImage()
+            ImageView thisMovieImageView = activity.findViewById(R.id.movieImageView);
+            if (thisMovieImageView != null)
+            {
 
                 switch(mItem.getMovieImage())
                 {
@@ -85,17 +90,20 @@ public class MovieDetailFragment extends Fragment {
             }
 
             FloatingActionButton fab = (FloatingActionButton) activity.findViewById(R.id.fab);
-            fab.setOnClickListener(new View.OnClickListener() {
+            fab.setOnClickListener(new View.OnClickListener()
+            {
                 @Override
-                public void onClick(View view) {
+                public void onClick(View view)
+                {
+                    Context context = view.getContext();
+                    Intent intent = new Intent(context, launch.class);
+                    intent.putExtra(MovieDetailFragment.ARG_ITEM_ID, mItem.getMovieWeblink());
+                    context.startActivity(intent);
 
                     // CS315: DO THIS
                     // TODO: launch the webpage with the URL we gots back from the model... also lose the snackbar stuff
                     // TODO: hint - you need to establish a new intent and launch a new Activity
                     // TODO: also, make sure you have a ProgressBar on your WebView, so users know you are loading something!
-
-                    Snackbar.make(view, "Make this button launch a NEW Activity with a WebView in it!", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
                 }
             });
         }

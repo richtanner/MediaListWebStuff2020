@@ -53,8 +53,8 @@ public class MovieListActivity extends AppCompatActivity {
 
 
 
-    public class SimpleItemRecyclerViewAdapter
-            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder> {
+    public class SimpleItemRecyclerViewAdapter extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder>
+    {
 
         private final List<MovieModel> mValues;
 
@@ -63,14 +63,16 @@ public class MovieListActivity extends AppCompatActivity {
         }
 
         @Override
-        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
+        {
             View view = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.movie_list_content, parent, false);
             return new ViewHolder(view);
         }
 
         @Override
-        public void onBindViewHolder(final ViewHolder holder, int position) {
+        public void onBindViewHolder(final ViewHolder holder, int position)
+        {
             holder.mItem = mValues.get(position);
             holder.mIdView.setText(mValues.get(position).getMovieTitle());
             holder.mContentView.setText(mValues.get(position).getMovieYear());
@@ -89,9 +91,6 @@ public class MovieListActivity extends AppCompatActivity {
 
         @Override
         public int getItemCount() {
-            // CS315: DO THIS
-            // TODO: BUG FIX - Figure out why our movie list gets re-added every time we come back to this Activity
-            // TODO: it could be in THIS class, OR in the DumbMovieContent class, or maybe even somewhere else?
             return mValues.size();
         }
 

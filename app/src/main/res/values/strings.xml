@@ -3,8 +3,7 @@
     <string name="title_movie_detail">Media Detail</string>
 
 
-
-<!--Rat Movie -->
+    <!--Rat Movie -->
     <string name="ratTitle">The Rat Movie</string>
     <string name="ratDescription">"In the middle of the night, The Rats and their leader The Giant Rat sing their legendary chant:
     Rats: Rats, we're rats, we're the rats. We prey at night, we stalk at night, we're the rats.
@@ -14,8 +13,7 @@
     <string name="ratImage">Thriller/Mystery</string>
     <string name="ratLink">https://jerma-lore.fandom.com/wiki/Rat_Movie</string>
 
-
-<!--Dead Poets Society -->
+    <!--Dead Poets Society -->
     <string name="poetTitle">Dead Poets Society</string>
     <string name="poetDescription">A new English teacher, John Keating (Robin Williams), is introduced to an all-boys preparatory school that
         is known for its ancient traditions and high standards. He uses unorthodox methods to reach out to his students, who face enormous
@@ -25,6 +23,43 @@
     <string name="poetImage">Dead Poet</string>
     <string name="poetLink">https://www.rottentomatoes.com/m/dead_poets_society</string>
 
+    <!--Zathura -->
+    <string name="zTitle">Zathura</string>
+    <string name="zDescription">After their father (Tim Robbins) is called into work, two young boys, Walter (Josh Hutcherson)
+            and Danny (Jonah Bobo), are left in the care of their teenage sister, Lisa (Kristen Stewart), and told they must stay inside. Walter
+            and Danny, who anticipate a boring day, are shocked when they begin playing Zathura, a space-themed board game, which they realize
+            has mystical powers when their house is shot into space. With the help of an astronaut (Dax Shepard), the boys attempt to return home.</string>
+    <string name="zYear">2005</string>
+    <string name="zImage">Zathura</string>
+    <string name="zLink">https://www.rottentomatoes.com/m/zathura</string>
 
-    
+    <!--Inspector Gadget -->
+    <string name="gadTitle">Inspector Gadget</string>
+    <string name="gadDescription">John Brown (Matthew Broderick) is a bumbling but well-intentioned security guard who is badly injured
+            in an explosion planned by an evil mastermind. He is taken to a laboratory, where Brenda (Joely Fisher), a leading robotics surgeon, replaces
+            his damaged limbs with state-of-the-art gadgets and tools. Named Inspector Gadget by the press, John -- along with his niece, Penny
+            (Michelle Trachtenberg), and her trusty dog, Brain -- uses his new powers to discover who was behind the explosion.</string>
+    <string name="gadYear">1999</string>
+    <string name="gadImage">Gadget</string>
+    <string name="gadLink">https://www.rottentomatoes.com/m/inspector_gadget</string>
+
+    <!--La La Land -->
+    <string name="laTitle">La La Land</string>
+    <string name="laDescription">Sebastian (Ryan Gosling) and Mia (Emma Stone) are drawn together by their common desire
+            to do what they love. But as success mounts they are faced with decisions that begin to fray the fragile fabric of their love
+            affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.</string>
+    <string name="laYear">2016</string>
+    <string name="laImage">La La</string>
+    <string name="laLink">https://www.rottentomatoes.com/m/la_la_land</string>
+    <string name="title_activity_launch">launch</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
 </resources>
