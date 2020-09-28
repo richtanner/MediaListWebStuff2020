@@ -109,15 +109,14 @@ public class MovieDetailFragment extends Fragment
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
         View rootView = inflater.inflate(R.layout.movie_detail, container, false);
 
         // Show the Movie Description as text in a TextView.
-        if (mItem != null) {
+        if (mItem != null)
             ((TextView) rootView.findViewById(R.id.movie_detail)).setText(mItem.getMovieDescription());
-        }
-
+        
         return rootView;
     }
 }
