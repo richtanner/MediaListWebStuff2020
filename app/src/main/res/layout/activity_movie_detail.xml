@@ -34,6 +34,7 @@
                 android:id="@+id/movieImageView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#6A6161"
                 android:scaleType="fitEnd"
                 app:srcCompat="@drawable/placeholder_poster" />
 
