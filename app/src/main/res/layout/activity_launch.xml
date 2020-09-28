@@ -5,15 +5,26 @@
     android:id="@+id/displayLink"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context="com.fall2019.cs315.mediawebstuff.launch">
 
 
     <include layout="@layout/content_launch" />
 
+    <TextView
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loading"
+        android:textAlignment="center" />
+
     <WebView
         android:id="@+id/webView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+    </WebView>
 
 
 </android.support.design.widget.CoordinatorLayout>
