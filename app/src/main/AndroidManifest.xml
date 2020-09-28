@@ -13,7 +13,7 @@
             android:name=".launch"
             android:label="@string/title_activity_launch"
             android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".MovieDetailActivity"
+            android:parentActivityName=".MovieListActivity"
             ></activity>
         <activity
             android:name=".SplashActivity"
