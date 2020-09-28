@@ -33,7 +33,7 @@
             <ImageView
                 android:id="@+id/movieImageView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="#6A6161"
                 android:scaleType="fitEnd"
                 app:srcCompat="@drawable/placeholder_poster" />
@@ -45,7 +45,7 @@
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/movie_detail_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="680dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <android.support.design.widget.FloatingActionButton
@@ -57,6 +57,7 @@
         app:backgroundTint="@android:color/holo_red_dark"
         app:layout_anchor="@+id/movie_detail_container"
         app:layout_anchorGravity="top|end"
-        app:srcCompat="@android:drawable/ic_menu_info_details" />
+        app:maxImageSize="50dp"
+        app:srcCompat="@android:drawable/ic_menu_compass" />
 
 </android.support.design.widget.CoordinatorLayout>
