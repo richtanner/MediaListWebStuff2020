@@ -12,18 +12,16 @@
         <activity
             android:name=".launch"
             android:label="@string/title_activity_launch"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MovieDetailActivity"
+            ></activity>
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+                <category android:name="android.intent.category.LAUNCHER" /></intent-filter></activity>
         <activity
             android:name=".MovieListActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
