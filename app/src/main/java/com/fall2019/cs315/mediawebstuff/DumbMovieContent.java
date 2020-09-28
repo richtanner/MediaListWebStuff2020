@@ -32,19 +32,19 @@ public class DumbMovieContent {
     private static final String movie1Weblink = "https://www.imdb.com/title/tt0371746/";
 
     private static final String movie2Title = "2. Avengers: Endgame";
-    private static final String movie2Description = "This movie is the finale to Marvel\\'s Avengers series, and boy did it go out with a bang!\n\nAfter the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos\\'s actions and restore balance to the universe.\n\nTo do this they must use time travel through the quantum realm in efforts to collect all of the \"Infinity Stones\" needed to use the \"Infinity Gauntlet,\" which does what whoever is wearing it wishes at the snap of their fingers.";
+    private static final String movie2Description = "This movie is the finale to Marvel\'s Avengers series, and boy did it go out with a bang!\n\nAfter the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos\'s actions and restore balance to the universe.\n\nTo do this they must use time travel through the quantum realm in efforts to collect all of the \"Infinity Stones\" needed to use the \"Infinity Gauntlet,\" which does what whoever is wearing it wishes at the snap of their fingers.";
     private static final String movie2Year = "2019";
     private static final String movie2Image = "avengers_endgame";
     private static final String movie2Weblink = "https://www.imdb.com/title/tt4154796/";
 
     private static final String movie3Title = "3. Black Panther";
-    private static final String movie3Description = "Marvel takes a different approach to their usual superhero stories in The Black Panther, with much more serious and politically charged theme.\n\nIt follows the story of T\\'Challa, heir to the hidden but technologically advanced kingdom of Wakanda, who must step up to lead his people into a new future and confront a challenger from his country's past";
+    private static final String movie3Description = "Marvel takes a different approach to their usual superhero stories in The Black Panther, with much more serious and politically charged theme.\n\nIt follows the story of T\'Challa, heir to the hidden but technologically advanced kingdom of Wakanda, who must step up to lead his people into a new future and confront a challenger from his country's past";
     private static final String movie3Year = "2018";
     private static final String movie3Image = "black_panther";
     private static final String movie3Weblink = "https://www.imdb.com/title/tt1825683/";
 
     private static final String movie4Title = "4. Guardians of the Galaxy";
-    private static final String movie4Description = "By far Marvel\\'s most whacky line up of superheroes band together in this film. It is full of intense action and hilarious comedy.\n\nThis movie follows the unification of a group of intergalactic criminals, who must pull together to stop a fanatical warrior with plans to purge the universe.";
+    private static final String movie4Description = "By far Marvel\'s most whacky, unconventional line up of superheroes band together in this film. It is full of intense action and hilarious comedy.\n\nThis movie follows the unification of a group of intergalactic criminals, who must pull together to stop a fanatical warrior with plans to purge the universe.";
     private static final String movie4Year = "2014";
     private static final String movie4Image = "guardians_of_the_galaxy";
     private static final String movie4Weblink = "https://www.imdb.com/title/tt2015381/";
