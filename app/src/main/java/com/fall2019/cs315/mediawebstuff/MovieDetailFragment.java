@@ -58,7 +58,7 @@ public class MovieDetailFragment extends Fragment
 
             mItem = DumbMovieContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
 
-            Activity activity = this.getActivity();
+            final Activity activity = this.getActivity();
             CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
             if (appBarLayout != null)
                 appBarLayout.setTitle(mItem.getMovieTitle());
@@ -66,7 +66,6 @@ public class MovieDetailFragment extends Fragment
             ImageView thisMovieImageView = activity.findViewById(R.id.movieImageView);
             if (thisMovieImageView != null)
             {
-
                 switch(mItem.getMovieImage())
                 {
                     case "Rat Movie":
