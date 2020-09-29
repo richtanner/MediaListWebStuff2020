@@ -25,17 +25,37 @@ public class DumbMovieContent {
     // CS315: DO THIS
     // TODO: Create five NEW movie objects here. Complete with images and URLs. DELETE the two existing movies, they are only here as an example
 
-    private static final String movie1Title = "Generic Rom Com:";
-    private static final String movie1Description = "Naturally, focuses on 2 people who really shouldn’t be together. It somehow becomes mutually advantageous for them to be together, or perhaps, they are interested in each other but their romance is based on false pretenses. Because the leads generally have no charisma, they each need a zany best friend who inserts dirty jokes wherever necessary. The two leads will fall in love in an extended music montage set to the music of Sixpence None the Richer. Once they find out about the false pretenses, they will take some time apart but realize how much they care for the other. Then comes “The Chase,” which can either be in an airport (not legal anymore), in traffic or somehow on boats. \n \nYou've seen this before, but not with these two actors!";
-    private static final String movie1Year = "2015";
-    private static final String movie1Image = "genericromcom";
-    private static final String movie1Weblink = "http://showtimeshowdown.com/5-cliche-formulas-of-movie-genres/";
+    private static final String movie1Title = "Tenet";
+    private static final String movie1Description = "Latest Movie About Inversion";
+    private static final String movie1Year = "2020";
+    private static final String movie1Image = "tenet";
+    private static final String movie1Weblink = "https://www.imdb.com/title/tt6723592/";
 
-    private static final String actionTitle = "Every Action Movie Ever";
-    private static final String actionDescription = "The villain has left the hero for dead, or killed the hero’s brother, sister, parents, wife or family pets. Filled with righteous fury, the hero tools up and embarks on a bloody rampage.  \n \nIf the movie does well, we will do it again in the sequel! \n \nMaybe the villain tries to get revenge on the hero for getting revenge on the villain in this movie...";
-    private static final String actionYear = "2017";
-    private static final String actionImage = "genericaction";
-    private static final String actionWeblink = "http://www.denofgeek.com/us/movies/18824/the-5-most-common-action-movie-plots";
+    private static final String movie2Title = "Dunkirk";
+    private static final String movie2Description = "World War movie on the horrors of war and the retrieval of troops";
+    private static final String movie2Year = "2017";
+    private static final String movie2Image = "dunkirk";
+    private static final String movie2Weblink = "https://www.imdb.com/title/tt5013056/";
+
+    private static final String movie3Title = "Interstellar";
+    private static final String movie3Description = "Movie about the travel to space to save the planet";
+    private static final String movie3Year = "2014";
+    private static final String movie3Image = "interstellar";
+    private static final String movie3Weblink = "https://www.imdb.com/title/tt0816692/";
+
+    private static final String movie4Title = "Inception";
+    private static final String movie4Description = "Going into the mind";
+    private static final String movie4Year = "2010";
+    private static final String movie4Image = "tenet";
+    private static final String movie4Weblink = "https://www.imdb.com/title/tt1375666/";
+
+    private static final String movie5Title = "the Prestige";
+    private static final String movie5Description = "Two magicians hate each other";
+    private static final String movie5Year = "2006";
+    private static final String movie5Image = "tenet";
+    private static final String movie5Weblink = "https://www.imdb.com/title/tt0482571/";
+
+
 
 
     /**
@@ -44,12 +64,18 @@ public class DumbMovieContent {
     public List<MovieModel> createMovieMagic () {
 
         // make those movie objects
-        MovieModel action = new MovieModel(actionTitle, actionDescription, actionYear, actionImage, actionWeblink);
-        MovieModel romcom = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
+        MovieModel mov1 = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
+        MovieModel mov2 = new MovieModel(movie2Title, movie2Description, movie2Year, movie2Image, movie2Weblink);
+        MovieModel mov3 = new MovieModel(movie3Title, movie3Description, movie3Year, movie3Image, movie3Weblink);
+        MovieModel mov4 = new MovieModel(movie4Title, movie4Description, movie4Year, movie4Image, movie4Weblink);
+        MovieModel mov5 = new MovieModel(movie5Title, movie5Description, movie5Year, movie5Image, movie5Weblink);
 
         // add EACH movie object to our lists and maps
-        addMovieToList(action);
-        addMovieToList(romcom);
+        addMovieToList(mov1);
+        addMovieToList(mov2);
+        addMovieToList(mov3);
+        addMovieToList(mov4);
+        addMovieToList(mov5);
 
         // no more movies to add?  Okay... return our list
         return MOVIES;
