@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Media List</string>
+    <string name="app_name">Worst Live Action Adaptions of All time</string>
     <string name="title_movie_detail">Media Detail</string>
 
 
@@ -7,17 +7,33 @@
 <!--    TODO: Create five NEW movie objects here. Complete with images and URLs. DELETE the two existing movies, they are only here as an example-->
 
 
-    <string name="example_1_title">Generic Rom Com</string>
-    <string name="example_1_description">Naturally, focuses on 2 people who really shouldn\'t be together. It somehow becomes mutually advantageous for them to be together, or perhaps, they are interested in each other but their romance is based on false pretenses. Because the leads generally have no charisma, they each need a zany best friend who inserts dirty jokes wherever necessary. The two leads will fall in love in an extended music montage set to the music of Sixpence None the Richer. Once they find out about the false pretenses, they will take some time apart but realize how much they care for the other. Then comes “The Chase,” which can either be in an airport (not legal anymore), in traffic or somehow on boats. \n \nYou\'ve seen this before, but not with these two actors!</string>
-    <string name="example_1_year">2018</string>
-    <string name="example_1_image">genericromcom</string>
-    <string name="example_1_url">http://showtimeshowdown.com/5-cliche-formulas-of-movie-genres/</string>
+    <string name="movie_1_title">Avatar (Live Action)</string>
+    <string name="movie_1_description">Avatar, a cartoon set in a pre-modern "element bending" world, is completely ruined with this movie. The original is full of comedy, story building, and character devolpment. None of which can be found here. A whole seasons plot can not fit in one movie, especially like this. </string>
+    <string name="movie_1_year">2010</string>
+    <string name="movie_1_image">lastairbenderposter</string>
+    <string name="movie_1_url">https://www.rottentomatoes.com/m/last_airbender</string>
 
-    <string name="example_2_title">Every Action Movie Ever</string>
-    <string name="example_2_description">The villain has left the hero for dead, or killed the hero’s brother, sister, parents, wife or family pets. Filled with righteous fury, the hero tools up and embarks on a bloody rampage.\n\nIf the movie does well, we will do it again in the sequel!\n\nMaybe the villain tries to get revenge on the hero for getting revenge on the villain in the next movie…</string>
-    <string name="example_2_year">2019</string>
-    <string name="example_2_image">genericaction</string>
-    <string name="example_2_url">http://www.denofgeek.com/us/movies/18824/the-5-most-common-action-movie-plots</string>
+    <string name="movie_2_title">Death Note (Netflix)</string>
+    <string name="movie_2_description">An extraordinary smart japanese teen named L stumbles upon a deathnote, a book killing anyone\'s name whose written in it. With killings happening across the world an equally smart japanese private detective Light shows up to find the killer, and stop him. This note also comes with a japanese death god, Ryuk, acting as a neutral character not really caring what happens (he is definitely the best character). So naturally the netflix adaption only takes these most main plot points, ignores the rest of the story, and sets the movie in the most sterotypical American school ever, and ruins the characters. Also L\'s relationship with his girlfriend is basically a rip off any 13 year old girls Tumblr Twilight fan fiction. They stop dating like four times in the movie just for L to apperntly have written a 15 page essay in the notebook to have the movies ending go his way. </string>
+    <string name="movie_2_year">2017</string>
+    <string name="movie_2_image">deathnotetrash</string>
+    <string name="movie_2_url">https://www.rottentomatoes.com/m/death_note_2017</string>
 
-    
+    <string name="movie_3_title">Dragonball Evolution </string>
+    <string name="movie_3_description">Where does one even begin. The plot is basically do whatever for the first 95% then fight Picallo.   Most adaptions have the deciency to at the very least sort of follow an arc or storyline from the show, and give respect to the characters it shows. This movie is markets itself as "The legend come to live", and pays for it. Even as a spin off this movie has terrible acting and story. Goku seems to just fall into things for his success instead of the rigorous training that the anime is known for. </string>
+    <string name="movie_3_year">2009</string>
+    <string name="movie_3_image">dbzbadr</string>
+    <string name="movie_3_url">https://www.rottentomatoes.com/m/dragonball/reviews</string>
+
+    <string name="movie_4_title">Diary of a Wimpy Kid </string>
+    <string name="movie_4_description">This one is just personal. Other than Percy Jackson, Diary of a Wimpy Kid is one of my favorite childhood series. This is a disgrace and has less funny jokes than the Pledge of Alligence. Barely follows any plot. Not very good acting. I don\'t know how they expected to make a comic a movie but having a family run around all day was not it. The cheese touch was live though..</string>
+    <string name="movie_4_year">2010</string>
+    <string name="movie_4_image">diaryofawimpy</string>
+    <string name="movie_4_url">https://www.rottentomatoes.com/m/diary_of_a_wimpy_kid</string>
+
+    <string name="movie_5_title">Dumbo </string>
+    <string name="movie_5_description">Elephant go fly hehe. Takes the cartoon and takes all the magic out of it. </string>
+    <string name="movie_5_year">2019</string>
+    <string name="movie_5_image">dumbopic</string>
+    <string name="movie_5_url">https://www.rottentomatoes.com/m/dumbo_2019</string>
 </resources>
