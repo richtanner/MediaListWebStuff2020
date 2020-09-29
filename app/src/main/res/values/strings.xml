@@ -36,5 +36,6 @@
     <string name="movieFive_year">2007</string>
     <string name="movieFive_image">transformers</string>
     <string name="movieFive_URL">https://www.imdb.com/title/tt0418279/</string>
-    
+
+    <string name="loading">loading</string>
 </resources>

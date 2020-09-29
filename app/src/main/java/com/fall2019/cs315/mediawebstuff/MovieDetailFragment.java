@@ -39,12 +39,11 @@ public class MovieDetailFragment extends Fragment {
     public MovieDetailFragment() {
     }
 
+    public static String URL;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // CS315: DO THIS
-        // TODO: BUG FIX - Figure out why the App CRASHES when we rotate this Activity...
 
         if (getArguments().containsKey(ARG_ITEM_ID)) {
             // Load the Movie content specified by the fragment
@@ -62,11 +61,11 @@ public class MovieDetailFragment extends Fragment {
             if (thisMovieImageView != null) {
 
                 // switch cases for setting the images based on strings
-                switch(mItem.getMovieImage()) {
+                switch(mItem.getMovieTitle()) {
                     case "Monty Python and the Holy Grail":
                         thisMovieImageView.setImageResource(R.drawable.montypython);
                         break;
-                    case "Star Wars: Episode III - Revenge of the Sith":
+                    case "Star Wars:Episode III - Revenge of the Sith":
                         thisMovieImageView.setImageResource(R.drawable.starwars);
                         break;
                     case "Friday":

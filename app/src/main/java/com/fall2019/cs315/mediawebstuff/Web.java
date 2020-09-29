@@ -2,7 +2,9 @@ package com.fall2019.cs315.mediawebstuff;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.webkit.WebView;
+import android.widget.TextView;
 
 public class Web extends AppCompatActivity {
 
@@ -13,13 +15,31 @@ public class Web extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
 
-        WebView web = (WebView)findViewById(R.id.webView);
+        final WebView web = (WebView) findViewById(R.id.web);
         web.getSettings().setJavaScriptEnabled(true);
 
-        String URL = extras.getString(MovieDetailFragment.ARG_ITEM_ID);
+        String URL = "";
 
+        if(savedInstanceState == null) {
+            if(extras == null)
+                URL = null;
+            else
+                URL = extras.getString(MovieDetailFragment.ARG_ITEM_ID);
+        }
+
+        if (URL != null) {
+            web.loadUrl(URL);
+
+            final TextView loading = findViewById(R.id.loading);
+
+            showWeb(loading, web);
+        }
     }
 
+    private void showWeb(TextView loading, WebView web) {
+        loading.setVisibility(View.INVISIBLE);
+        web.setVisibility(View.VISIBLE);
+    }
 
 
 }
