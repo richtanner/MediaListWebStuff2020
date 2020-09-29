@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Worst Live Action Adaptions of All time</string>
     <string name="title_movie_detail">Media Detail</string>
+    <string name="loading">. . . loading . . .</string>
 
 
 <!--    CS315: DO THIS-->
@@ -35,5 +36,5 @@
     <string name="movie_5_description">Elephant go fly hehe. Takes the cartoon and takes all the magic out of it. </string>
     <string name="movie_5_year">2019</string>
     <string name="movie_5_image">dumbopic</string>
-    <string name="movie_5_url">https://www.rottentomatoes.com/m/dumbo_2019</string>
+    <string name="movie_5_url">https://www.rottentomatoes.com/m/dumbo_2019</string>k
 </resources>

@@ -64,23 +64,23 @@ public class MovieDetailFragment extends Fragment
             {
                 switch(mItem.getMovieImage())
                 {
-                    case "The Last Airbender":
+                    case "lastairbenderposter":
                         thisMovieImageView.setImageResource(R.drawable.lastairbenderposter);
                         break;
 
-                    case "Death Note":
+                    case "deathnotetrash":
                         thisMovieImageView.setImageResource(R.drawable.deathnotetrash);
                         break;
 
-                    case "Dragonball Evolution":
+                    case "dbzbad":
                         thisMovieImageView.setImageResource(R.drawable.dbzbad);
                         break;
 
-                    case "Diary of a Wimpy Kid":
+                    case "diaryofawimpy":
                         thisMovieImageView.setImageResource(R.drawable.diaryofawimpy);
                         break;
 
-                    case "Dumbo":
+                    case "dumbopic":
                         thisMovieImageView.setImageResource(R.drawable.dumbopic);
                         break;
 
@@ -89,7 +89,7 @@ public class MovieDetailFragment extends Fragment
                         break;
                 }
             }
-            /*
+
 
             FloatingActionButton fab = (FloatingActionButton) activity.findViewById(R.id.fab);
             fab.setOnClickListener(new View.OnClickListener()
@@ -102,7 +102,7 @@ public class MovieDetailFragment extends Fragment
                     intent.putExtra(MovieDetailFragment.ARG_ITEM_ID, mItem.getMovieWeblink());
                     context.startActivity(intent);
                 }
-            });*/
+            });
         }
     }
 

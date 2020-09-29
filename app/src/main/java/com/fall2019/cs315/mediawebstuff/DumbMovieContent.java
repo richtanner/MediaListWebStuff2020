@@ -55,7 +55,7 @@ public class DumbMovieContent {
      */
     public List<MovieModel> createMovieMagic () {
 
-        if(!(ITEM_MAP.containsKey("Avatar")))
+        if(!(ITEM_MAP.containsKey("The Last Airbender")))
         {
             MovieModel aBender = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
             MovieModel dNote = new MovieModel(movie2Title, movie2Description, movie2Year, movie2Image, movie2Weblink);
