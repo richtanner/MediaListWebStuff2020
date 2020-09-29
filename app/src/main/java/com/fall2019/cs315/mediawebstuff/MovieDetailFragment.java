@@ -42,21 +42,17 @@ public class MovieDetailFragment extends Fragment
     {
     }
 
+private String suffering = "thisShouldBeEmpty_";
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
 
-        // CS315: DO THIS
-        // TODO: BUG FIX - Figure out why the App CRASHES when we rotate this Activity...
-
         if (getArguments().containsKey(ARG_ITEM_ID))
         {
             // Load the Movie content specified by the fragment
-            // arguments. In a real-world scenario, use a Loader
-            // to load content from a content provider.
 
-            mItem = DumbMovieContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
+                mItem = DumbMovieContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
 
             final Activity activity = this.getActivity();
             CollapsingToolbarLayout appBarLayout = (CollapsingToolbarLayout) activity.findViewById(R.id.toolbar_layout);
@@ -98,11 +94,6 @@ public class MovieDetailFragment extends Fragment
                     Intent intent = new Intent(context, launch.class);
                     intent.putExtra(MovieDetailFragment.ARG_ITEM_ID, mItem.getMovieWeblink());
                     context.startActivity(intent);
-
-                    // CS315: DO THIS
-                    // TODO: launch the webpage with the URL we gots back from the model... also lose the snackbar stuff
-                    // TODO: hint - you need to establish a new intent and launch a new Activity
-                    // TODO: also, make sure you have a ProgressBar on your WebView, so users know you are loading something!
                 }
             });
         }
@@ -116,7 +107,7 @@ public class MovieDetailFragment extends Fragment
         // Show the Movie Description as text in a TextView.
         if (mItem != null)
             ((TextView) rootView.findViewById(R.id.movie_detail)).setText(mItem.getMovieDescription());
-        
+
         return rootView;
     }
 }

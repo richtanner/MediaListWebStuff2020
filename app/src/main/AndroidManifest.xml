@@ -13,7 +13,7 @@
             android:name=".launch"
             android:label="@string/title_activity_launch"
             android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName=".MovieDetailActivity">
+            android:parentActivityName=".MovieListActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.fall2019.cs315.mediawebstuff.MovieListActivity" />

@@ -23,7 +23,6 @@ public class launch extends AppCompatActivity
         setContentView(R.layout.activity_launch);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         // Show the Up button in the action bar.
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -34,15 +33,19 @@ public class launch extends AppCompatActivity
         String newString = "";
         if (savedInstanceState == null) {
             extras = getIntent().getExtras();
-            if (extras == null) {
+            if (extras == null)
+            {
                 newString = null;
-            } else {
+            }
+            else
+            {
                 newString = extras.getString(MovieDetailFragment.ARG_ITEM_ID);
             }
         }
 
         final WebView thisWebView = findViewById(R.id.webView);
         thisWebView.getSettings().setJavaScriptEnabled(true);
+    //delay webview visibility
         if (newString != null) {
             thisWebView.loadUrl(newString);
             final TextView loading = findViewById(R.id.loading);
