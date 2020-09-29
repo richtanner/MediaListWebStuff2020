@@ -6,8 +6,9 @@
 
     <item>
         <bitmap
-            android:gravity="center"
-            android:src="@drawable/placeholder_splash"/>
+            android:gravity="fill"
+            android:src="@drawable/splash_image"
+            android:mipMap="true"/>
     </item>
 
 </layer-list>

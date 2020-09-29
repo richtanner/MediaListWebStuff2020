@@ -1,10 +1,11 @@
 package com.fall2019.cs315.mediawebstuff;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -74,8 +75,10 @@ public class MovieDetailFragment extends Fragment {
                     // TODO: hint - you need to establish a new intent and launch a new Activity
                     // TODO: also, make sure you have a ProgressBar on your WebView, so users know you are loading something!
 
-                    Snackbar.make(view, "Make this button launch a NEW Activity with a WebView in it!", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
+                    Context context = view.getContext();
+                    Intent intent = new Intent(context, WebViewActivity.class);
+
+                    context.startActivity(intent);
                 }
             });
         }
