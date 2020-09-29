@@ -7,7 +7,7 @@ public class MovieModel {
     private String movieImage;
     private String movieWeblink;
 
-    /* initializer */
+    // initializer
     public MovieModel(final String movieTitle, final String movieDescription, final String movieYear, final String movieImage, final String movieWeblink) {
         setMovieTitle(movieTitle);
         setMovieDescription(movieDescription);
@@ -16,7 +16,7 @@ public class MovieModel {
         setMovieWeblink(movieWeblink);
     }
 
-    /* getters */
+    // getters
     public String getMovieTitle() {
         return movieTitle;
     }
@@ -37,23 +37,17 @@ public class MovieModel {
         return movieWeblink;
     }
 
-    /* setters */
+    // setters
     public void setMovieTitle(final String movieTitle) {
         this.movieTitle = movieTitle;
     }
-
-    public void setMovieDescription(final String movieDescription) {
-        this.movieDescription = movieDescription;
-    }
-
+    public void setMovieDescription(final String movieDescription) { this.movieDescription = movieDescription; }
     public void setMovieYear(final String movieYear) {
         this.movieYear = movieYear;
     }
-
     public void setMovieImage(final String movieImage) {
         this.movieImage = movieImage;
     }
-
     public void setMovieWeblink(final String movieWeblink) {
         this.movieWeblink = movieWeblink;
     }
