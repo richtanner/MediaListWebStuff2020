@@ -61,6 +61,26 @@ public class MovieDetailFragment extends Fragment {
 
                 // CS315: DO THIS
                 // TODO: Set the image based upon the string we got stashed in getMovieImage()
+                // switch cases for setting the images based on strings
+                switch(mItem.getMovieImage()) {
+                    case "Monty Python and the Holy Grail":
+                        thisMovieImageView.setImageResource(R.drawable.montypython);
+                        break;
+                    case "Star Wars: Episode III - Revenge of the Sith":
+                        thisMovieImageView.setImageResource(R.drawable.starwars);
+                        break;
+                    case "Friday":
+                        thisMovieImageView.setImageResource(R.drawable.friday);
+                        break;
+                    case "Star Trek":
+                        thisMovieImageView.setImageResource(R.drawable.startrek);
+                        break;
+                    case "Transformers":
+                        thisMovieImageView.setImageResource(R.drawable.transformers);
+                        break;
+                    default:
+                        break;
+                }
 
             }
 

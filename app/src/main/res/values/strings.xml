@@ -6,18 +6,35 @@
 <!--    CS315: DO THIS-->
 <!--    TODO: Create five NEW movie objects here. Complete with images and URLs. DELETE the two existing movies, they are only here as an example-->
 
+    <!-- MY 5 STRING MOVIE OBJECTS-->
+    <string name="movieOne_title">Monty Python and the Holy Grail</string>
+    <string name="movieOne_description">Shows the journey of Monty Python\'s journey to retrieve the holy grail.</string>
+    <string name="movieOne_year">1975</string>
+    <string name="movieOne_image">montypython</string>
+    <string name="movieOne_URL">https://www.imdb.com/title/tt0071853/</string>
 
-    <string name="example_1_title">Generic Rom Com</string>
-    <string name="example_1_description">Naturally, focuses on 2 people who really shouldn’t be together. It somehow becomes mutually advantageous for them to be together, or perhaps, they are interested in each other but their romance is based on false pretenses. Because the leads generally have no charisma, they each need a zany best friend who inserts dirty jokes wherever necessary. The two leads will fall in love in an extended music montage set to the music of Sixpence None the Richer. Once they find out about the false pretenses, they will take some time apart but realize how much they care for the other. Then comes “The Chase,” which can either be in an airport (not legal anymore), in traffic or somehow on boats. \n \nYou've seen this before, but not with these two actors!</string>
-    <string name="example_1_year">2018</string>
-    <string name="example_1_image">genericromcom</string>
-    <string name="example_1_url">http://showtimeshowdown.com/5-cliche-formulas-of-movie-genres/</string>
+    <string name="movieTwo_title">Star Wars: Episode III - Revenge of the Sith</string>
+    <string name="movieTwo_description">Three years into the Clone Wars, the Jedi rescue Palpatine from Count Dooku. As Obi-Wan pursues a new threat, Anakin acts as a double agent between the Jedi Council and Palpatine and is lured into a sinister plan to rule the galaxy.</string>
+    <string name="movieTwo_year">2005</string>
+    <string name="movieTwo_image">starwars</string>
+    <string name="movieTwo_URL">https://www.rottentomatoes.com/m/star_wars_episode_iii_revenge_of_the_sith</string>
 
-    <string name="example_2_title">Every Action Movie Ever</string>
-    <string name="example_2_description">The villain has left the hero for dead, or killed the hero’s brother, sister, parents, wife or family pets. Filled with righteous fury, the hero tools up and embarks on a bloody rampage.\n\nIf the movie does well, we will do it again in the sequel!\n\nMaybe the villain tries to get revenge on the hero for getting revenge on the villain in the next movie...</string>
-    <string name="example_2_year">2019</string>
-    <string name="example_2_image">genericaction</string>
-    <string name="example_2_url">http://www.denofgeek.com/us/movies/18824/the-5-most-common-action-movie-plots</string>
+    <string name="movieThree_title">Friday</string>
+    <string name="movieThree_description">Follows the story of a recently enemployed son, Craig and his best friend Smokey as they sit on their porch. It turns out Smokey is a drug dealer and has used his own supply instead of selling it. Big Worm the man who gave Smokey the drugs then threatens to kill him if he doesn\'t give him his money by the end of the day. Craig and Smokey eventually find a way to pay him back through a funny series of events.</string>
+    <string name="movieThree_year">1995</string>
+    <string name="movieThree_image">friday</string>
+    <string name="movieThree_URL">https://www.rottentomatoes.com/m/star_wars_episode_iii_revenge_of_the_sith</string>
 
+    <string name="movieFour_title">Star Trek</string>
+    <string name="movieFour_description">Aboard the USS Enterprise, the most-sophisticated starship ever built, a novice crew embarks on its maiden voyage. Their path takes them on a collision course with Nero (Eric Bana), a Romulan commander whose mission of vengeance threatens all mankind. If humanity would survive, a rebellious young officer named James T. Kirk (Chris Pine) and a coolly logical Vulcan named Spock (Zachary Quinto) must move beyond their rivalry and find a way to defeat Nero before it is too late.</string>
+    <string name="movieFour_year">2009</string>
+    <string name="movieFour_image">startrek</string>
+    <string name="movieFour_URL">https://www.rottentomatoes.com/m/star_trek_11</string>
+
+    <string name="movieFive_title">Transformers</string>
+    <string name="movieFive_description">A man gets a new car which turns out to be an alien mechanical warmachine also known as an autobot. With the arrival of the autobots onto planet Earth, the decepticons rage war against the autobots.</string>
+    <string name="movieFive_year">2007</string>
+    <string name="movieFive_image">transformers</string>
+    <string name="movieFive_URL">https://www.imdb.com/title/tt0418279/</string>
     
 </resources>

@@ -25,17 +25,36 @@ public class DumbMovieContent {
     // CS315: DO THIS
     // TODO: Create five NEW movie objects here. Complete with images and URLs. DELETE the two existing movies, they are only here as an example
 
-    private static final String movie1Title = "Generic Rom Com:";
-    private static final String movie1Description = "Naturally, focuses on 2 people who really shouldn’t be together. It somehow becomes mutually advantageous for them to be together, or perhaps, they are interested in each other but their romance is based on false pretenses. Because the leads generally have no charisma, they each need a zany best friend who inserts dirty jokes wherever necessary. The two leads will fall in love in an extended music montage set to the music of Sixpence None the Richer. Once they find out about the false pretenses, they will take some time apart but realize how much they care for the other. Then comes “The Chase,” which can either be in an airport (not legal anymore), in traffic or somehow on boats. \n \nYou've seen this before, but not with these two actors!";
-    private static final String movie1Year = "2015";
-    private static final String movie1Image = "genericromcom";
-    private static final String movie1Weblink = "http://showtimeshowdown.com/5-cliche-formulas-of-movie-genres/";
+    // My LIST OF MOVIES
+    private static final String movieOneTitle = "Monty Python and the Holy Grail";
+    private static final String movieOneDescription = "Shows the journey of Monty Python's journey to retrieve the holy grail";
+    private static final String movieOneYear = "1975";
+    private static final String movieOneImage = "montypython";
+    private static final String movieOneWeblink = "https://www.imdb.com/title/tt0071853/";
 
-    private static final String actionTitle = "Every Action Movie Ever";
-    private static final String actionDescription = "The villain has left the hero for dead, or killed the hero’s brother, sister, parents, wife or family pets. Filled with righteous fury, the hero tools up and embarks on a bloody rampage.  \n \nIf the movie does well, we will do it again in the sequel! \n \nMaybe the villain tries to get revenge on the hero for getting revenge on the villain in this movie...";
-    private static final String actionYear = "2017";
-    private static final String actionImage = "genericaction";
-    private static final String actionWeblink = "http://www.denofgeek.com/us/movies/18824/the-5-most-common-action-movie-plots";
+    private static final String movieTwoTitle = "Star Wars: Episode III - Revenge of the Sith";
+    private static final String movieTwoDescription = "Three years into the Clone Wars, the Jedi rescue Palpatine from Count Dooku. As Obi-Wan pursues a new threat, Anakin acts as a double agent between the Jedi Council and Palpatine and is lured into a sinister plan to rule the galaxy.";
+    private static final String movieTwoYear = "2005";
+    private static final String movieTwoImage = "starwars";
+    private static final String movieTwoWeblink = "https://www.rottentomatoes.com/m/star_wars_episode_iii_revenge_of_the_sith";
+
+    private static final String movieThreeTitle = "Friday";
+    private static final String movieThreeDescription = "Follows the story of a recently enemployed son, Craig and his best friend Smokey as they sit on their porch. It turns out Smokey is a drug dealer and has used his own supply instead of selling it. Big Worm the man who gave Smokey the drugs then threatens to kill him if he doesn't give him his money by the end of the day. Craig and Smokey eventually find a way to pay him back through a funny series of events.";
+    private static final String movieThreeYear = "1995";
+    private static final String movieThreeImage = "friday";
+    private static final String movieThreeWeblink = "https://www.imdb.com/title/tt0113118/";
+
+    private static final String movieFourTitle = "Star Trek";
+    private static final String movieFourDescription = "Aboard the USS Enterprise, the most-sophisticated starship ever built, a novice crew embarks on its maiden voyage. Their path takes them on a collision course with Nero (Eric Bana), a Romulan commander whose mission of vengeance threatens all mankind. If humanity would survive, a rebellious young officer named James T. Kirk (Chris Pine) and a coolly logical Vulcan named Spock (Zachary Quinto) must move beyond their rivalry and find a way to defeat Nero before it is too late.";
+    private static final String movieFourYear = "2009";
+    private static final String movieFourImage = "startrek";
+    private static final String movieFourWeblink = "https://www.rottentomatoes.com/m/star_trek_11";
+
+    private static final String movieFiveTitle = "Transformers";
+    private static final String movieFiveDescription = "A man gets a new car which turns out to be an alien mechanical warmachine also known as an autobot. With the arrival of the autobots onto planet Earth, the decepticons rage war against the autobots.";
+    private static final String movieFiveYear = "2007";
+    private static final String movieFiveImage = "transformers";
+    private static final String movieFiveWeblink = "https://www.imdb.com/title/tt0418279/";
 
 
     /**
@@ -43,13 +62,43 @@ public class DumbMovieContent {
      */
     public List<MovieModel> createMovieMagic () {
 
+        // If statement which checks to see if
+        if(!(ITEM_MAP.containsKey("Monty Python and the Holy Grail"))) {
+            MovieModel MontyPython = new MovieModel(movieOneTitle, movieOneDescription, movieOneYear, movieOneImage, movieOneWeblink);
+            MovieModel StarWarsRevengeOfTheSith = new MovieModel(movieTwoTitle, movieTwoDescription, movieTwoYear, movieTwoImage, movieTwoWeblink);
+            MovieModel FridayFirst = new MovieModel(movieThreeTitle, movieThreeDescription, movieThreeYear, movieThreeImage, movieThreeWeblink);
+            MovieModel StarTrekRemastered = new MovieModel(movieFourTitle, movieFourDescription, movieFourYear, movieFourImage, movieFourWeblink);
+            MovieModel TransformersOriginal = new MovieModel(movieFiveTitle, movieFiveDescription, movieFiveYear, movieFiveImage, movieFiveWeblink);
+
+            addMovieToList(MontyPython);
+            addMovieToList(StarWarsRevengeOfTheSith);
+            addMovieToList(FridayFirst);
+            addMovieToList(StarTrekRemastered);
+            addMovieToList(TransformersOriginal);
+        }
+
+        /*
         // make those movie objects
         MovieModel action = new MovieModel(actionTitle, actionDescription, actionYear, actionImage, actionWeblink);
         MovieModel romcom = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
 
+        // My Movie Objects
+        MovieModel MontyPython = new MovieModel(movieOneTitle, movieOneDescription, movieOneYear, movieOneImage, movieOneWeblink);
+        MovieModel StarWarsRevengeOfTheSith = new MovieModel(movieTwoTitle, movieTwoDescription, movieTwoYear, movieTwoImage, movieTwoWeblink);
+        MovieModel FridayFirst = new MovieModel(movieThreeTitle, movieThreeDescription, movieThreeYear, movieThreeImage, movieThreeWeblink);
+        MovieModel StarTrekRemastered = new MovieModel(movieFourTitle, movieFourDescription, movieFourYear, movieFourImage, movieFourWeblink);
+        MovieModel TransformersOriginal = new MovieModel(movieFiveTitle, movieFiveDescription, movieFiveYear, movieFiveImage, movieFiveWeblink);
+
         // add EACH movie object to our lists and maps
         addMovieToList(action);
         addMovieToList(romcom);
+
+        // * My Movies
+        addMovieToList(MontyPython);
+        addMovieToList(StarWarsRevengeOfTheSith);
+        addMovieToList(FridayFirst);
+        addMovieToList(StarTrekRemastered);
+        addMovieToList(TransformersOriginal); */
 
         // no more movies to add?  Okay... return our list
         return MOVIES;
