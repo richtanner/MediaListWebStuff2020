@@ -1,6 +1,8 @@
 package com.fall2019.cs315.mediawebstuff;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -59,8 +61,6 @@ public class MovieDetailFragment extends Fragment {
             ImageView thisMovieImageView = activity.findViewById(R.id.movieImageView);
             if (thisMovieImageView != null) {
 
-                // CS315: DO THIS
-                // TODO: Set the image based upon the string we got stashed in getMovieImage()
                 // switch cases for setting the images based on strings
                 switch(mItem.getMovieImage()) {
                     case "Monty Python and the Holy Grail":
@@ -81,21 +81,16 @@ public class MovieDetailFragment extends Fragment {
                     default:
                         break;
                 }
-
             }
 
             FloatingActionButton fab = (FloatingActionButton) activity.findViewById(R.id.fab);
             fab.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
-                    // CS315: DO THIS
-                    // TODO: launch the webpage with the URL we gots back from the model... also lose the snackbar stuff
-                    // TODO: hint - you need to establish a new intent and launch a new Activity
-                    // TODO: also, make sure you have a ProgressBar on your WebView, so users know you are loading something!
-
-                    Snackbar.make(view, "Make this button launch a NEW Activity with a WebView in it!", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
+                    Context context = view.getContext();
+                    Intent intent = new Intent(context, Web.class);
+                    intent.putExtra(MovieDetailFragment.ARG_ITEM_ID, mItem.getMovieWeblink());
+                    startActivity(intent);
                 }
             });
         }

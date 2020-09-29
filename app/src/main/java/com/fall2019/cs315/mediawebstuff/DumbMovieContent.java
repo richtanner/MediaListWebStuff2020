@@ -22,9 +22,6 @@ public class DumbMovieContent {
      * Create all those movie Strings we will be needing for teh models
      */
 
-    // CS315: DO THIS
-    // TODO: Create five NEW movie objects here. Complete with images and URLs. DELETE the two existing movies, they are only here as an example
-
     // My LIST OF MOVIES
     private static final String movieOneTitle = "Monty Python and the Holy Grail";
     private static final String movieOneDescription = "Shows the journey of Monty Python's journey to retrieve the holy grail";
@@ -32,7 +29,7 @@ public class DumbMovieContent {
     private static final String movieOneImage = "montypython";
     private static final String movieOneWeblink = "https://www.imdb.com/title/tt0071853/";
 
-    private static final String movieTwoTitle = "Star Wars: Episode III - Revenge of the Sith";
+    private static final String movieTwoTitle = "Star Wars:Episode III - Revenge of the Sith";
     private static final String movieTwoDescription = "Three years into the Clone Wars, the Jedi rescue Palpatine from Count Dooku. As Obi-Wan pursues a new threat, Anakin acts as a double agent between the Jedi Council and Palpatine and is lured into a sinister plan to rule the galaxy.";
     private static final String movieTwoYear = "2005";
     private static final String movieTwoImage = "starwars";
@@ -76,29 +73,6 @@ public class DumbMovieContent {
             addMovieToList(StarTrekRemastered);
             addMovieToList(TransformersOriginal);
         }
-
-        /*
-        // make those movie objects
-        MovieModel action = new MovieModel(actionTitle, actionDescription, actionYear, actionImage, actionWeblink);
-        MovieModel romcom = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
-
-        // My Movie Objects
-        MovieModel MontyPython = new MovieModel(movieOneTitle, movieOneDescription, movieOneYear, movieOneImage, movieOneWeblink);
-        MovieModel StarWarsRevengeOfTheSith = new MovieModel(movieTwoTitle, movieTwoDescription, movieTwoYear, movieTwoImage, movieTwoWeblink);
-        MovieModel FridayFirst = new MovieModel(movieThreeTitle, movieThreeDescription, movieThreeYear, movieThreeImage, movieThreeWeblink);
-        MovieModel StarTrekRemastered = new MovieModel(movieFourTitle, movieFourDescription, movieFourYear, movieFourImage, movieFourWeblink);
-        MovieModel TransformersOriginal = new MovieModel(movieFiveTitle, movieFiveDescription, movieFiveYear, movieFiveImage, movieFiveWeblink);
-
-        // add EACH movie object to our lists and maps
-        addMovieToList(action);
-        addMovieToList(romcom);
-
-        // * My Movies
-        addMovieToList(MontyPython);
-        addMovieToList(StarWarsRevengeOfTheSith);
-        addMovieToList(FridayFirst);
-        addMovieToList(StarTrekRemastered);
-        addMovieToList(TransformersOriginal); */
 
         // no more movies to add?  Okay... return our list
         return MOVIES;
