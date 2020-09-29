@@ -73,16 +73,11 @@ public class DumbMovieContent {
     private static final String movie5Image = "La La";
     private static final String movie5Weblink = "https://www.rottentomatoes.com/m/la_la_land";
 
-
     /**
      * Create and return an array of Movie items.  Duh!
      */
-    public List<MovieModel> createMovieMagic () {
-
-        // make those movie objects
-
-
-        // add EACH movie object to our lists and maps
+    public List<MovieModel> createMovieMagic ()
+    {
         if(!(ITEM_MAP.containsKey("Rat Movie")))
             {
                 MovieModel ratMovie = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
@@ -97,11 +92,9 @@ public class DumbMovieContent {
                 addMovieToList(gadget);
                 addMovieToList(la);
             }
-        // no more movies to add?  Okay... return our list
         return MOVIES;
     }
-
-    // Internal helper so we don't forget any steps in the complex two-step system.  Seriously.  It happens.
+    
     private void addMovieToList (MovieModel datMovie) {
         MOVIES.add(datMovie);
         ITEM_MAP.put(datMovie.getMovieTitle(), datMovie);
