@@ -31,6 +31,8 @@ public class MovieDetailFragment extends Fragment {
      */
     private MovieModel mItem;
 
+    public static final String EXTRA_MESSAGE = "com.fall2019.cs315.mediawebstuff.MESSAGE";
+
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
@@ -74,10 +76,12 @@ public class MovieDetailFragment extends Fragment {
                     // TODO: launch the webpage with the URL we gots back from the model... also lose the snackbar stuff
                     // TODO: hint - you need to establish a new intent and launch a new Activity
                     // TODO: also, make sure you have a ProgressBar on your WebView, so users know you are loading something!
+                    String url = mItem.getMovieWeblink();
+                    int id = getResources().getIdentifier("com.fall2018.cs315.mymovielist:drawable/" + mItem.getMovieWeblink(), null, null);
 
                     Context context = view.getContext();
                     Intent intent = new Intent(context, WebViewActivity.class);
-
+                    intent.putExtra(EXTRA_MESSAGE, url);
                     context.startActivity(intent);
                 }
             });
