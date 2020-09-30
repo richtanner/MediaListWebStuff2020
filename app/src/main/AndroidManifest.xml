@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".Web" />
+        <activity android:name=".Web"
+            android:parentActivityName=".MovieListActivity" />
 
         <activity
             android:name="com.fall2019.cs315.mediawebstuff.SplashActivity"

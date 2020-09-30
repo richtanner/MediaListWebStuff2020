@@ -66,13 +66,13 @@ public class MovieDetailFragment extends Fragment {
                         thisMovieImageView.setImageResource(R.drawable.montypython);
                         break;
                     case "Star Wars:Episode III - Revenge of the Sith":
-                        thisMovieImageView.setImageResource(R.drawable.starwars);
+                        thisMovieImageView.setImageResource(R.drawable.starwarsthree);
                         break;
                     case "Friday":
                         thisMovieImageView.setImageResource(R.drawable.friday);
                         break;
                     case "Star Trek":
-                        thisMovieImageView.setImageResource(R.drawable.startrek);
+                        thisMovieImageView.setImageResource(R.drawable.startrekremastered);
                         break;
                     case "Transformers":
                         thisMovieImageView.setImageResource(R.drawable.transformers);
