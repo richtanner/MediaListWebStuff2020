@@ -77,7 +77,6 @@ public class MovieDetailFragment extends Fragment {
                     // TODO: hint - you need to establish a new intent and launch a new Activity
                     // TODO: also, make sure you have a ProgressBar on your WebView, so users know you are loading something!
                     String url = mItem.getMovieWeblink();
-                    int id = getResources().getIdentifier("com.fall2018.cs315.mymovielist:drawable/" + mItem.getMovieWeblink(), null, null);
 
                     Context context = view.getContext();
                     Intent intent = new Intent(context, WebViewActivity.class);
