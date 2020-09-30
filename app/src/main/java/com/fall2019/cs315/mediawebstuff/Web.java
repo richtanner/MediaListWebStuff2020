@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 public class Web extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class Web extends AppCompatActivity {
 
         final WebView web = (WebView) findViewById(R.id.web);
         web.getSettings().setJavaScriptEnabled(true);
+        web.setWebViewClient(new WebViewClient());
 
         String URL = "";
 
@@ -40,6 +42,4 @@ public class Web extends AppCompatActivity {
         loading.setVisibility(View.INVISIBLE);
         web.setVisibility(View.VISIBLE);
     }
-
-
 }
