@@ -32,7 +32,8 @@
         <activity
             android:name=".MovieDetailActivity"
             android:label="@string/title_movie_detail"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|screenSize|keyboardHidden">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.fall2019.cs315.mediawebstuff.MovieListActivity" />

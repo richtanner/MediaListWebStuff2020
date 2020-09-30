@@ -59,20 +59,22 @@ public class DumbMovieContent {
      * Create and return an array of Movie items.  Duh!
      */
     public List<MovieModel> createMovieMagic () {
+        if((ITEM_MAP.containsKey("1. Iron Man"))){
+        } else{
+            // make those movie objects
+            MovieModel ironMan = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
+            MovieModel endgame = new MovieModel(movie2Title, movie2Description, movie2Year, movie2Image, movie2Weblink);
+            MovieModel blackPanther = new MovieModel(movie3Title, movie3Description, movie3Year, movie3Image, movie3Weblink);
+            MovieModel gOfGalaxy = new MovieModel(movie4Title, movie4Description, movie4Year, movie4Image, movie4Weblink);
+            MovieModel antWasp = new MovieModel(movie5Title, movie5Description, movie5Year, movie5Image, movie5Weblink);
 
-        // make those movie objects
-        MovieModel ironMan = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
-        MovieModel endgame = new MovieModel(movie2Title, movie2Description, movie2Year, movie2Image, movie2Weblink);
-        MovieModel blackPanther = new MovieModel(movie3Title, movie3Description, movie3Year, movie3Image, movie3Weblink);
-        MovieModel gOfGalaxy = new MovieModel(movie4Title, movie4Description, movie4Year, movie4Image, movie4Weblink);
-        MovieModel antWasp = new MovieModel(movie5Title, movie5Description, movie5Year, movie5Image, movie5Weblink);
-
-        // add EACH movie object to our lists and maps
-        addMovieToList(ironMan);
-        addMovieToList(endgame);
-        addMovieToList(blackPanther);
-        addMovieToList(gOfGalaxy);
-        addMovieToList(antWasp);
+            // add EACH movie object to our lists and maps
+            addMovieToList(ironMan);
+            addMovieToList(endgame);
+            addMovieToList(blackPanther);
+            addMovieToList(gOfGalaxy);
+            addMovieToList(antWasp);
+        }
 
         // no more movies to add?  Okay... return our list
         return MOVIES;

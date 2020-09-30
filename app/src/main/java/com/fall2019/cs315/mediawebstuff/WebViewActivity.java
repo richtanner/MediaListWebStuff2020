@@ -24,29 +24,25 @@ public class WebViewActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String url = intent.getStringExtra(MovieDetailFragment.EXTRA_MESSAGE);
 
-        webView = (WebView) findViewById(R.id.webview);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
-
-        webView.setWebViewClient(new WebViewClient());
+        webView = (WebView) findViewById(R.id.webview);
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl(url);
-    }
+        webView.setWebViewClient(new WebViewClient(){
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+                progressBar.setVisibility(View.VISIBLE);
+                setTitle("LOADING... (Patience is a virtue!)");
+            }
 
-    public class WebViewClient extends android.webkit.WebViewClient {
-        @Override
-        public void onPageStarted(WebView view, String url, Bitmap favicon) {
-            super.onPageStarted(view, url, favicon);
-        }
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view, String url) {
-            view.loadUrl(url);
-            return true;
-        }
-        @Override
-        public void onPageFinished(WebView view, String url) {
-            super.onPageFinished(view, url);
-            progressBar.setVisibility(View.GONE);
-        }
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                progressBar.setVisibility(View.GONE);
+                setTitle(view.getTitle());
+            }
+        });
+        webView.loadUrl(url);
     }
 
     @Override
