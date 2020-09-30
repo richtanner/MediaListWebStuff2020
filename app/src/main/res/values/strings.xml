@@ -2,9 +2,13 @@
     <string name="app_name">Worst Live Action Adaptions of All time</string>
     <string name="title_movie_detail">Media Detail</string>
     <string name="loading">. . . loading . . .</string>
+    <string name="frag1">!Fragment one initiating!</string>
+  <!--  <string name="frag2">!Fragment two taking off!</string> -->
+    <string name="next">Next</string>
+    <string name="LoadPage">Load Page</string>
 
 
-<!--    CS315: DO THIS-->
+    <!--    CS315: DO THIS-->
 <!--    TODO: Create five NEW movie objects here. Complete with images and URLs. DELETE the two existing movies, they are only here as an example-->
 
 
@@ -33,7 +37,7 @@
     <string name="movie_4_url">https://www.rottentomatoes.com/m/diary_of_a_wimpy_kid</string>
 
     <string name="movie_5_title">Dumbo </string>
-    <string name="movie_5_description">Elephant go fly hehe. Takes the cartoon and takes all the magic out of it. </string>
+    <string name="movie_5_description">Elephant go fly hehe. Takes the cartoon and takes all the magic out of it. A carnival is rolling around performing and it is about to close because it sucks. Mrs. Jumbo, the carnival elephant gives birth to Dumbo who starts flying around and the carnival is saved and everyone is rich. </string>
     <string name="movie_5_year">2019</string>
     <string name="movie_5_image">dumbopic</string>
     <string name="movie_5_url">https://www.rottentomatoes.com/m/dumbo_2019</string>k

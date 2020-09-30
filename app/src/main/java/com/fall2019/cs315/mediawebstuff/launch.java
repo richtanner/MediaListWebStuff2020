@@ -32,6 +32,7 @@ public class launch extends AppCompatActivity
 
         Bundle extras;
         String newString = "";
+
         if (savedInstanceState == null) {
             extras = getIntent().getExtras();
             if (extras == null)

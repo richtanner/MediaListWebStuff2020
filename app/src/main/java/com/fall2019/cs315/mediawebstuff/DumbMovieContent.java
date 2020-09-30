@@ -46,7 +46,7 @@ public class DumbMovieContent {
 
     private static final String movie5Title = "Dumbo";
     private static final String movie5Year = "2019";
-    private static final String movie5Description = "Elephant go fly hehe. Takes the cartoon and takes all the magic out of it.";
+    private static final String movie5Description = "Elephant go fly hehe. Takes the cartoon and takes all the magic out of it. A carnival is rolling around performing and it is about to close because it sucks. Mrs. Jumbo, the carnival elephant gives birth to Dumbo who starts flying around and the carnival is saved and everyone is rich.";
     private static final String movie5Image = "dumbopic";
     private static final String movie5Weblink = "https://www.rottentomatoes.com/m/dumbo_2019";
 
