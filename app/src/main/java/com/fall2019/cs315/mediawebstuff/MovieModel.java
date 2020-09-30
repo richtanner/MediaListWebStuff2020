@@ -29,9 +29,7 @@ public class MovieModel {
         return movieYear;
     }
 
-    public String getMovieImage() {
-        return movieImage;
-    }
+    public String getMovieImage() { return movieImage; }
 
     public String getMovieWeblink() {
         return movieWeblink;
@@ -42,9 +40,7 @@ public class MovieModel {
         this.movieTitle = movieTitle;
     }
 
-    public void setMovieDescription(final String movieDescription) {
-        this.movieDescription = movieDescription;
-    }
+    public void setMovieDescription(final String movieDescription) { this.movieDescription = movieDescription; }
 
     public void setMovieYear(final String movieYear) {
         this.movieYear = movieYear;

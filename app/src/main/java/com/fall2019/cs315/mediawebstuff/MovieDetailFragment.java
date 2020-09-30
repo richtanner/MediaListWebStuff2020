@@ -1,6 +1,9 @@
 package com.fall2019.cs315.mediawebstuff;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -34,6 +37,9 @@ public class MovieDetailFragment extends Fragment {
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
+
+    public static final String EXTRA_MESSAGE = "com.fall2019.cs315.mediawebstuff.MESSAGE";
+
     public MovieDetailFragment() {
     }
 
@@ -61,6 +67,8 @@ public class MovieDetailFragment extends Fragment {
 
                 // CS315: DO THIS
                 // TODO: Set the image based upon the string we got stashed in getMovieImage()
+                int id = getResources().getIdentifier("com.fall2018.cs315.mymovielist:drawable/" + mItem.getMovieImage(), null, null);
+                thisMovieImageView.setImageResource(id);
 
             }
 
@@ -74,13 +82,18 @@ public class MovieDetailFragment extends Fragment {
                     // TODO: hint - you need to establish a new intent and launch a new Activity
                     // TODO: also, make sure you have a ProgressBar on your WebView, so users know you are loading something!
 
-                    Snackbar.make(view, "Make this button launch a NEW Activity with a WebView in it!", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
+                    String url= mItem.getMovieWeblink();
+
+                    Context context = view.getContext();
+                    Intent intent = new Intent(context, WebActivity.class);
+                    intent.putExtra(EXTRA_MESSAGE, url);
+
+                    context.startActivity(intent);
                 }
             });
         }
     }
-
+    
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
