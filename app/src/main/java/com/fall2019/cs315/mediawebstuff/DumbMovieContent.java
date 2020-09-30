@@ -23,7 +23,6 @@ public class DumbMovieContent {
      */
 
     // CS315: DO THIS
-    // TODO: Create five NEW movie objects here. Complete with images and URLs. DELETE the two existing movies, they are only here as an example
 
     private static final String movie1Title = "Tenet";
     private static final String movie1Description = "Latest Movie About Inversion";
@@ -46,13 +45,13 @@ public class DumbMovieContent {
     private static final String movie4Title = "Inception";
     private static final String movie4Description = "Going into the mind";
     private static final String movie4Year = "2010";
-    private static final String movie4Image = "tenet";
+    private static final String movie4Image = "inception";
     private static final String movie4Weblink = "https://www.imdb.com/title/tt1375666/";
 
     private static final String movie5Title = "the Prestige";
     private static final String movie5Description = "Two magicians hate each other";
     private static final String movie5Year = "2006";
-    private static final String movie5Image = "tenet";
+    private static final String movie5Image = "prestige";
     private static final String movie5Weblink = "https://www.imdb.com/title/tt0482571/";
 
 
@@ -64,18 +63,22 @@ public class DumbMovieContent {
     public List<MovieModel> createMovieMagic () {
 
         // make those movie objects
-        MovieModel mov1 = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
-        MovieModel mov2 = new MovieModel(movie2Title, movie2Description, movie2Year, movie2Image, movie2Weblink);
-        MovieModel mov3 = new MovieModel(movie3Title, movie3Description, movie3Year, movie3Image, movie3Weblink);
-        MovieModel mov4 = new MovieModel(movie4Title, movie4Description, movie4Year, movie4Image, movie4Weblink);
-        MovieModel mov5 = new MovieModel(movie5Title, movie5Description, movie5Year, movie5Image, movie5Weblink);
+        if((ITEM_MAP.containsKey("Tenet"))){
+        }
+        else {
+            MovieModel mov1 = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
+            MovieModel mov2 = new MovieModel(movie2Title, movie2Description, movie2Year, movie2Image, movie2Weblink);
+            MovieModel mov3 = new MovieModel(movie3Title, movie3Description, movie3Year, movie3Image, movie3Weblink);
+            MovieModel mov4 = new MovieModel(movie4Title, movie4Description, movie4Year, movie4Image, movie4Weblink);
+            MovieModel mov5 = new MovieModel(movie5Title, movie5Description, movie5Year, movie5Image, movie5Weblink);
 
-        // add EACH movie object to our lists and maps
-        addMovieToList(mov1);
-        addMovieToList(mov2);
-        addMovieToList(mov3);
-        addMovieToList(mov4);
-        addMovieToList(mov5);
+            // add EACH movie object to our lists and maps
+            addMovieToList(mov1);
+            addMovieToList(mov2);
+            addMovieToList(mov3);
+            addMovieToList(mov4);
+            addMovieToList(mov5);
+        }
 
         // no more movies to add?  Okay... return our list
         return MOVIES;

@@ -45,7 +45,6 @@ public class MovieDetailFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         // CS315: DO THIS
-        // TODO: BUG FIX - Figure out why the App CRASHES when we rotate this Activity...
 
         if (getArguments().containsKey(ARG_ITEM_ID)) {
             // Load the Movie content specified by the fragment
@@ -63,8 +62,7 @@ public class MovieDetailFragment extends Fragment {
             if (thisMovieImageView != null) {
 
                 // CS315: DO THIS
-                // TODO: Set the image based upon the string we got stashed in getMovieImage()
-                int id = getResources().getIdentifier("com.fall2019.cs315.mediawebstuff:drawable/" + mItem.getMovieImage(),null, null);
+                int id = getResources().getIdentifier("com.fall2018.cs315.mymovielist:drawable/" + mItem.getMovieImage(),null, null);
                 thisMovieImageView.setImageResource(id);
 
 
@@ -76,15 +74,10 @@ public class MovieDetailFragment extends Fragment {
                 public void onClick(View view) {
 
                     // CS315: DO THIS
-                    // TODO: launch the webpage with the URL we gots back from the model... also lose the snackbar stuff
-                    // TODO: hint - you need to establish a new intent and launch a new Activity
-                    // TODO: also, make sure you have a ProgressBar on your WebView, so users know you are loading something!
-                    //Context context = ideas.getContext();
-                    //Intent intent = new Intent(context, WebActivity.class);
-                    //context.startActivity(intent);
-
-                    Snackbar.make(view, "Make this button launch a NEW Activity with a WebView in it!", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
+                    Context context = view.getContext();
+                    Intent intent = new Intent(context, WebActivity.class);
+                    intent.putExtra(MovieDetailFragment.ARG_ITEM_ID, mItem.getMovieWeblink());
+                    context.startActivity(intent);
                 }
             });
         }
