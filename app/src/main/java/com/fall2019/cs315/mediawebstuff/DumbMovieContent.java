@@ -25,17 +25,37 @@ public class DumbMovieContent {
     // CS315: DO THIS
     // TODO: Create five NEW movie objects here. Complete with images and URLs. DELETE the two existing movies, they are only here as an example
 
-    private static final String movie1Title = "Generic Rom Com:";
-    private static final String movie1Description = "Naturally, focuses on 2 people who really shouldn’t be together. It somehow becomes mutually advantageous for them to be together, or perhaps, they are interested in each other but their romance is based on false pretenses. Because the leads generally have no charisma, they each need a zany best friend who inserts dirty jokes wherever necessary. The two leads will fall in love in an extended music montage set to the music of Sixpence None the Richer. Once they find out about the false pretenses, they will take some time apart but realize how much they care for the other. Then comes “The Chase,” which can either be in an airport (not legal anymore), in traffic or somehow on boats. \n \nYou've seen this before, but not with these two actors!";
-    private static final String movie1Year = "2015";
-    private static final String movie1Image = "genericromcom";
-    private static final String movie1Weblink = "http://showtimeshowdown.com/5-cliche-formulas-of-movie-genres/";
+    private static final String movie1Title = "Star Wars: Episode V";
+    private static final String movie1Description = "It is a tough time for both the Rebellion and the Empire. The Empire lost The Death Star, while the Rebellion lost their home base. On top of all that, Luke feels lost on what to do, now that his original Master, Obi Wan 'Ben' Kenobi, is no longer with him. Forced to hide from the provoked Empire, the Rebellion settles on the remote planet of Hoth. But Luke has a vision from Ben Kenobi: He is to find his old master Master Yoda from the Clone Wars and be taught by him so he can still become a Jedi. Will he be trained strong enough to bring peace to the galaxy? Or will an unexpected twist throw everything out of balance?";
+    private static final String movie1Year = "1980";
+    private static final String movie1Image = "episodefive";
+    private static final String movie1Weblink = "https://www.imdb.com/title/tt0080684/";
 
-    private static final String actionTitle = "Every Action Movie Ever";
-    private static final String actionDescription = "The villain has left the hero for dead, or killed the hero’s brother, sister, parents, wife or family pets. Filled with righteous fury, the hero tools up and embarks on a bloody rampage.  \n \nIf the movie does well, we will do it again in the sequel! \n \nMaybe the villain tries to get revenge on the hero for getting revenge on the villain in this movie...";
-    private static final String actionYear = "2017";
-    private static final String actionImage = "genericaction";
+    private static final String actionTitle = "Star Wars: Episode VI";
+    private static final String actionDescription = "All cards are on the table. Luke knows that Vader is his father, Han Solo is in need of rescue, and the Empire has just revealed it's newest threat: The Second Death Star. With the rebellion pushing to push the Empire out of the galaxy once and for all, they prepare one final, full frontal assault on The Emperor's battle station. All the while Luke, who understands the severity of the situation, prepares to confront his father in one final attempt to cure his father's (and subsequently the Emperor's) evil from the galaxy, once and for all. ";
+    private static final String actionYear = "1983";
+    private static final String actionImage = "Sci-Fi Action Movie";
     private static final String actionWeblink = "http://www.denofgeek.com/us/movies/18824/the-5-most-common-action-movie-plots";
+
+    private static final String movie2Title = "Star Wars Episode III";
+    private static final String movie2Description = "The war has escalated. The Clone Wars rage on, with the Republic and the Separatists both trying to end it. Anakin and Obi Wan's relationship has also escalated: Anakin's pull towards the darkside has never been stronger. After hearing life changing news that his secret wife, Padme Amidala, was pregnant, Anakin begins to have visions that she will die when she gives birth. Determined to not let that happen, Anakin begins to turn to the one person he feels that can help him: Chancellor Palpatine. Little does Anakin, as well as all the Jedi know, that a large and evil sinister plot is about to be revealed, which will change the galaxy forever.";
+    private static final String movie2Year = "2005";
+    private static final String movie2Image = "Sci-Fi-action";
+    private static final String movie2Weblink = "";
+
+    private static final String movie3Title = "Star Wars Episode IV";
+    private static final String movie3Description = "The movie that started it all! Luke, an average farmboy on the desert planet Tatooine, aspires to be more than what his uncle thinks he can be. After a near death experience, Luke crosses paths with Ben Kenobi, a Jedi from a bygone era of the galaxy. After the Empire attacks his home, Luke agrees to be trained by Ben Kenobi to help put a stop to the Empire's evil doings. Excited, cocky, and ready for adventure, Luke sets out with Kenobi to begin his journey. But little does he know, that his world is about to get a whole lot bigger.";
+    private static final String movie3Year = "1977";
+    private static final String movie3Image = "Sci-Fi-action";
+    private static final String movie3Weblink = "";
+
+    private static final String movie4Title = "Rogue One: A Star Wars Story";
+    private static final String movie4Description = "The Rebellion has just uncovered a terrible truth: The Empire is building a massive superweapon that can chaos on galactic scales. Time is of the essence, and Jyn Erso, a partisan against the Empire, has just found out that her father was majorly involved in the superweapon's construction. Determined to discover the truth, Jyn sets out on a dangerous mission to uncover buried secrets, and help the rebellion gather information on the new threat that has arisen in the galaxy. ";
+    private static final String movie4Year = "2016";
+    private static final String movie4Image = "rogueone";
+    private static final String movie4Weblink = "";
+
+
 
 
     /**
@@ -44,12 +64,18 @@ public class DumbMovieContent {
     public List<MovieModel> createMovieMagic () {
 
         // make those movie objects
-        MovieModel action = new MovieModel(actionTitle, actionDescription, actionYear, actionImage, actionWeblink);
-        MovieModel romcom = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
+        MovieModel episodev = new MovieModel(actionTitle, actionDescription, actionYear, actionImage, actionWeblink);
+        MovieModel episodevi = new MovieModel(movie1Title, movie1Description, movie1Year, movie1Image, movie1Weblink);
+        MovieModel episodeiii = new MovieModel(movie2Title, movie2Description, movie2Year, movie2Image, movie2Weblink);
+        MovieModel episodeiv = new MovieModel(movie3Title, movie3Description, movie3Year, movie3Image, movie3Weblink);
+        MovieModel episodehalf = new MovieModel(movie4Title, movie4Description, movie4Year, movie4Image, movie4Weblink);
 
         // add EACH movie object to our lists and maps
-        addMovieToList(action);
-        addMovieToList(romcom);
+        addMovieToList(episodev);
+        addMovieToList(episodevi);
+        addMovieToList(episodeiii);
+        addMovieToList(episodeiv);
+        addMovieToList(episodehalf);
 
         // no more movies to add?  Okay... return our list
         return MOVIES;

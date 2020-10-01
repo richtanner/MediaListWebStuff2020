@@ -6,8 +6,10 @@
 
     <item>
         <bitmap
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:gravity="center"
-            android:src="@drawable/placeholder_splash"/>
+            android:src="@drawable/splashfix" />
     </item>
 
 </layer-list>
