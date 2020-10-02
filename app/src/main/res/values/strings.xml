@@ -18,25 +18,25 @@
     <string name="example_2_description">All cards are on the table. Luke knows that Vader is his father, Han Solo is in need of rescue, and the Empire has just revealed its newest threat: The Second Death Star. With the rebellion pushing to push the Empire out of the galaxy once and for all, they prepare one final, full frontal assault on The Emperors battle station. All the while Luke, who understands the severity of the situation, prepares to confront his father in one final attempt to cure his fathers (and subsequently the Emperors) evil from the galaxy, once and for all.</string>
     <string name="example_2_year">1983</string>
     <string name="example_2_image">episodesix</string>
-    <string name="example_2_url"></string>
+    <string name="example_2_url">https://www.imdb.com/title/tt0086190/</string>
 
     <string name="example_3_title">Star Wars: Episode III</string>
     <string name="example_3_description">The war has escalated. The Clone Wars rage on, with the Republic and the Separatists both trying to end it. Anakin and Obi Wans relationship has also escalated: Anakins pull towards the darkside has never been stronger. After hearing life changing news that his secret wife, Padme Amidala, was pregnant, Anakin begins to have visions that she will die when she gives birth. Determined to not let that happen, Anakin begins to turn to the one person he feels that can help him: Chancellor Palpatine. Little does Anakin, as well as all the Jedi know, that a large and evil sinister plot is about to be revealed, which will change the galaxy forever.</string>
     <string name="example_3_year">2005</string>
     <string name="example_3_image">episodethree</string>
-    <string name="example_3_url"></string>
+    <string name="example_3_url">https://www.imdb.com/title/tt0121766/</string>
 
     <string name="example_4_title">Star Wars: Episode IV</string>
     <string name="example_4_description">The movie that started it all! Luke, an average farmboy on the desert planet Tatooine, aspires to be more than what his uncle thinks he can be. After a near death experience, Luke crosses paths with Ben Kenobi, a Jedi from a bygone era of the galaxy. After the Empire attacks his home, Luke agrees to be trained by Ben Kenobi to help put a stop to the Empires evil doings. Excited, cocky, and ready for adventure, Luke sets out with Kenobi to begin his journey. But little does he know, that his world is about to get a whole lot bigger.</string>
     <string name="example_4_year">1977</string>
     <string name="example_4_image">episodefour</string>
-    <string name="example_4_url"></string>
+    <string name="example_4_url">https://www.imdb.com/title/tt0076759/</string>
 
     <string name="example_5_title">Rogue One: A Star Wars Story</string>
     <string name="example_5_description">The Rebellion has just uncovered a terrible truth: The Empire is building a massive superweapon that can chaos on galactic scales. Time is of the essence, and Jyn Erso, a partisan against the Empire, has just found out that her father was majorly involved in the superweapons construction. Determined to discover the truth, Jyn sets out on a dangerous mission to uncover buried secrets, and help the rebellion gather information on the new threat that has arisen in the galaxy. </string>
     <string name="example_5_year">2016</string>
     <string name="example_5_image">rogueone</string>
-    <string name="example_5_url"></string>
+    <string name="example_5_url">https://www.imdb.com/title/tt3748528/</string>
 
 
 

@@ -1,6 +1,8 @@
 package com.fall2019.cs315.mediawebstuff;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -20,21 +22,11 @@ import android.widget.TextView;
  * on handsets.
  */
 public class MovieDetailFragment extends Fragment {
-    /**
-     * The fragment argument representing the item ID that this fragment
-     * represents.
-     */
+
     public static final String ARG_ITEM_ID = "item_id";
 
-    /**
-     * The Movie content this fragment is presenting.
-     */
     private MovieModel mItem;
 
-    /**
-     * Mandatory empty constructor for the fragment manager to instantiate the
-     * fragment (e.g. upon screen orientation changes).
-     */
     public MovieDetailFragment() {
     }
 
@@ -46,9 +38,6 @@ public class MovieDetailFragment extends Fragment {
         // TODO: BUG FIX - Figure out why the App CRASHES when we rotate this Activity...
 
         if (getArguments().containsKey(ARG_ITEM_ID)) {
-            // Load the Movie content specified by the fragment
-            // arguments. In a real-world scenario, use a Loader
-            // to load content from a content provider.
 
             mItem = DumbMovieContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
 
@@ -60,9 +49,26 @@ public class MovieDetailFragment extends Fragment {
             ImageView thisMovieImageView = activity.findViewById(R.id.movieImageView);
             if (thisMovieImageView != null) {
 
-                // CS315: DO THIS
-                // TODO: Set the image based upon the string we got stashed in getMovieImage()
-
+                switch (mItem.getMovieTitle())
+                {
+                    case "Star Wars: Episode V" :
+                        thisMovieImageView.setImageResource(R.drawable.episodefive);
+                        break;
+                    case "Star Wars: Episode VI" :
+                        thisMovieImageView.setImageResource(R.drawable.episodesix);
+                        break;
+                    case "Star Wars: Episode III" :
+                        thisMovieImageView.setImageResource(R.drawable.episodethree);
+                        break;
+                    case "Star Wars: Episode IV" :
+                        thisMovieImageView.setImageResource(R.drawable.episodefour);
+                        break;
+                    case "Rogue One: A Star Wars Story" :
+                        thisMovieImageView.setImageResource(R.drawable.rogueone);
+                        break;
+                    default:
+                        break;
+                }
             }
 
             FloatingActionButton fab = (FloatingActionButton) activity.findViewById(R.id.fab);
@@ -70,13 +76,11 @@ public class MovieDetailFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
 
-                    // CS315: DO THIS
-                    // TODO: launch the webpage with the URL we gots back from the model... also lose the snackbar stuff
-                    // TODO: hint - you need to establish a new intent and launch a new Activity
-                    // TODO: also, make sure you have a ProgressBar on your WebView, so users know you are loading something!
+                    Context context = view.getContext();
+                    Intent intent = new Intent(context, StarWarsWeb.class);
+                    intent.putExtra(MovieDetailFragment.ARG_ITEM_ID, mItem.getMovieWeblink());
+                    startActivity(intent);
 
-                    Snackbar.make(view, "Make this button launch a NEW Activity with a WebView in it!", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
                 }
             });
         }
